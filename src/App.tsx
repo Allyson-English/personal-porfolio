@@ -61,13 +61,29 @@ function App() {
       {/* SECOND SECTION */}
       <div className="h-screen w-full bg-green-500">
         <div className="container mx-auto">
-          <TextBox
-            title={"About"}
-            paragraph={`Lorem ipsum dolor sit amet consectetur. Neque at elit sodales
+          <div className="p-80">
+            <TextBox
+              title={"About"}
+              paragraph={`Lorem ipsum dolor sit amet consectetur. Neque at elit sodales
               justo tortor porttitor temport viverra. Ac viverra tortor quis sit
               senectus non eu. Tellus nulla lorem mobri integer lorem. Eu tellus
               quis faucibus at nisl aliquet facilisi.`}
-          />
+            />
+          </div>
+        </div>
+      </div>
+      {/* Project About SECTION */}
+      <div className="h-screen w-full bg-blue-500">
+        <div className="container">
+          <div className="p-20">
+            <TextBox
+              title={"About"}
+              paragraph={`Lorem ipsum dolor sit amet consectetur. Neque at elit sodales
+              justo tortor porttitor temport viverra. Ac viverra tortor quis sit
+              senectus non eu. Tellus nulla lorem mobri integer lorem. Eu tellus
+              quis faucibus at nisl aliquet facilisi.`}
+            />
+          </div>
         </div>
       </div>
       {/* FOOTER */}
