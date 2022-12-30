@@ -30,7 +30,7 @@ export const Projects = () => {
         <div
           className="w-[840px] absolute left-0 z-[10]"
           data-scroll
-          data-scroll-speed="9"
+          data-scroll-speed="3"
         >
           <img src="/images/semo.png" alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
@@ -54,7 +54,7 @@ export const Projects = () => {
         <div
           className="w-[320px] absolute left-0 top-[600px] z-[12]"
           data-scroll
-          data-scroll-speed="9"
+          data-scroll-speed="6"
         >
           <img src="/images/kahani.png" alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
@@ -66,7 +66,7 @@ export const Projects = () => {
         <div
           className="w-[480px] absolute right-0 top-[840px] z-[13]"
           data-scroll
-          data-scroll-speed="9"
+          data-scroll-speed="3"
         >
           <img src="/images/archimedes.png" alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
@@ -90,7 +90,7 @@ export const Projects = () => {
         <div
           className="w-[320px] absolute left-0 top-[1540px] z-[15]"
           data-scroll
-          data-scroll-speed="9"
+          data-scroll-speed="6"
         >
           <img src="/images/normal-nyc.png" alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">

@@ -29,7 +29,7 @@ export const CallToAction = () => {
       data-scroll-id="call-to-action"
     >
       <motion.div
-        className="container mx-auto py-16 -z-10"
+        className="container mx-auto py-16 -z-10 overflow-clip"
         style={{ y: contentY }}
       >
         <div className="grid grid-cols-3 gap-8">
@@ -60,7 +60,9 @@ export const CallToAction = () => {
 
         <div className="w-full h-[1px] bg-black mt-16 mb-8"></div>
 
-        <p className="w-full text-center text-[248px]">Get in touch</p>
+        <p className="w-full text-center font-medium text-[240px]">
+          Get in touch
+        </p>
       </motion.div>
     </div>
   );
