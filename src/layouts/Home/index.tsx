@@ -3,6 +3,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useBeforeUnload, useLocation } from "react-router-dom";
 import { useSetRecoilState } from "recoil";
 import { locationState } from "../../atoms/scroll";
+import { Contact } from "../../components/Contact";
 
 import { CallToAction } from "./CallToAction";
 import { Hero } from "./Hero";
@@ -29,9 +30,7 @@ export const Home = () => {
           <div className="container mx-auto flex justify-between items-center h-full">
             <div className="text-white text-lg font-medium">Ben</div>
             <div className="text-white"></div>
-            <button className="text-white border border-white px-8 py-1 rounded-full">
-              Contact
-            </button>
+            <Contact />
           </div>
         </div>
 
