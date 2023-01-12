@@ -10,6 +10,7 @@ import { RecoilRoot, useRecoilValue } from "recoil";
 import { locationState } from "./atoms/scroll";
 import { Dimo } from "./layouts/Dimo";
 import { Home } from "./layouts/Home";
+import { PodsSystem } from "./layouts/PodsSystem";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
     element: <Dimo />,
   },
   {
-    path: "/projects/mint-sunday",
-    element: <Dimo />,
+    path: "/projects/pods-system",
+    element: <PodsSystem />,
   },
   {
     path: "/projects/dreamfield",

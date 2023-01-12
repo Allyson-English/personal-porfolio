@@ -187,7 +187,7 @@ export const Showcase = () => {
             if (slideThreeActive) {
               navigate("/projects/dreamfield");
             } else if (slideTwoActive) {
-              navigate("/projects/mint-sunday");
+              navigate("/projects/pods-system");
             } else if (slideOneActive) {
               navigate("/projects/dimo");
             }

@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { FullPageImage } from "../../components/full_page_img";
+import { NavigateToNeighboringPage } from "../../components/navigation_prev_or_next";
 import { CallToAction } from "../Home/CallToAction";
 import { Outtro } from "../Home/Outtro";
 
@@ -25,11 +27,9 @@ export const Dimo = () => {
           </button>
         </div>
       </div>
-
       <p className="text-white font-normal text-[232px] text-center">
         DIMO Mobile
       </p>
-
       <div className="container mx-auto flex justify-between border-b-[1px] pb-20">
         <table className="text-xl">
           <tbody>
@@ -75,11 +75,9 @@ export const Dimo = () => {
           </div>
         </div>
       </div>
-
       <div className="flex flex-col w-[80%] mx-auto mt-20">
-        <img src="/images/main-showcase-item.png" alt="" />
+        <img src="/images/dimo/phone-and-autopi-sploosh-and-box.png" alt="" />
       </div>
-
       <div className="container mx-auto pb-20">
         <div className="container mx-auto mt-48 border-b-[1px] pb-20">
           <div className="w-full max-w-5xl text-justify">
@@ -110,71 +108,84 @@ export const Dimo = () => {
           </p>
         </div>
       </div>
+      <FullPageImage path="/images/dimo/phones-color.png" margin="" />
+      <FullPageImage path="/images/dimo/dimo-scene.png" margin="" />
 
-      <img className="pb-40" src="/images/main-showcase-item.png" alt="" />
-
-      <div className="flex container mx-auto pb-40">
-        <div className="container mx-auto mt-48 pb-20">
-          <div className="w-full max-w-2xl">
-            <p className="text-xl border-b-[1px] pb-5 text-white">Core home</p>
-            <p className="text-xl text-white pt-5 leading-snug">
-              The dominant component of the home’s UI changes to reflect the
-              vehicle’s percentage of fuel or charge remaining. This wave and
-              gradient is also carried through the tab bar icon.
-            </p>
+      <div className="flex container mx-auto mb-40">
+        {" "}
+        <div className="w-[50%]">
+          <div className="flex container mx-auto mt-48 pb-20">
+            <div className="w-full max-w-2xl">
+              <p className="text-xl border-b-[1px] pb-5 text-white">
+                Core home
+              </p>
+              <p className="text-xl text-white pt-5 leading-snug">
+                The dominant component of the home’s UI changes to reflect the
+                vehicle’s percentage of fuel or charge remaining. This wave and
+                gradient is also carried through the tab bar icon.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="">
-          <img src="/images/main-showcase-item.png" alt="" />
+        <div className="w-[50%] flex justify-center">
+          {" "}
+          <img src="/images/dimo/iphone-14-pro.png" alt="" />
         </div>
       </div>
-
-      <div className="flex container mx-auto pb-40">
-        <div className="">
-          <img src="/images/main-showcase-item.png" alt="" />
+      <div className="flex container mx-auto mb-40">
+        {" "}
+        <div className="w-[50%] flex justify-center">
+          {" "}
+          <img src="/images/dimo/frame-512824.png" alt="" />
         </div>
-        <div className="">
-          <img src="/images/main-showcase-item.png" alt="" />
+        <div className="w-[50%] flex justify-center">
+          {" "}
+          <img src="/images/dimo/frame-512825.png" alt="" />
         </div>
       </div>
-
-      <div className="flex container mx-auto pb-40">
-        <div className="">
-          <img src="/images/main-showcase-item.png" alt="" />
+      <div className="flex container mx-auto mb-40">
+        <div className="w-[50%] flex justify-center">
+          {" "}
+          <img src="/images/dimo/iphone-14-pro2.png" alt="" />
         </div>
-        <div className="container mx-auto mt-48 pb-20">
-          <div className="w-full max-w-2xl">
-            <p className="text-xl border-b-[1px] pb-5 text-white">Core home</p>
-            <p className="text-xl text-white pt-5 leading-snug">
-              The dominant component of the home’s UI changes to reflect the
-              vehicle’s percentage of fuel or charge remaining. This wave and
-              gradient is also carried through the tab bar icon.
-            </p>
+        <div className="w-[50%]">
+          <div className="flex container mx-auto mt-48 pb-20">
+            <div className="w-full max-w-2xl">
+              <p className="text-xl border-b-[1px] pb-5 text-white">
+                Intelligence
+              </p>
+              <p className="text-xl text-white pt-5 leading-snug">
+                A suite of data-focused graphs, insights, and tips provides
+                users with a look into their cars’ performance and trends over
+                time.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <img className="pb-40" src="/images/main-showcase-item.png" alt="" />
-
-      <div className="flex container mx-auto pb-40">
-        <div className="container mx-auto mt-48 pb-20">
-          <div className="w-full max-w-2xl">
-            <p className="text-xl border-b-[1px] pb-5 text-white">
-              Vehicles as NFTs
-            </p>
-            <p className="text-xl text-white pt-5 leading-snug">
-              Users can change the appearance of the NFT of their vehicle with a
-              customizer in the app. The NFT serves as the user’s passport into
-              the DIMO app and ecosystem.
-            </p>
+      <FullPageImage path="/images/dimo/fleet-mockup.png" margin="mb-40" />
+      <div className="flex container mx-auto mb-64">
+        {" "}
+        <div className="w-[50%]">
+          <div className="flex container mx-auto mt-48 pb-20">
+            <div className="w-full max-w-2xl">
+              <p className="text-xl border-b-[1px] pb-5 text-white">
+                Vehicles as NFTs
+              </p>
+              <p className="text-xl text-white pt-5 leading-snug">
+                Users can change the appearance of the NFT of their vehicle with
+                a customizer in the app. The NFT serves as the user’s passport
+                into the DIMO app and ecosystem.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="">
-          <img src="/images/main-showcase-item.png" alt="" />
+        <div className="w-[50%] flex justify-center">
+          {" "}
+          <img src="/images/dimo/iphone-14-pro3.png" alt="" />
         </div>
       </div>
-
-      <div className="container mx-auto mt-30 pb-20">
+      <div className="container mx-auto mt-30 pb-64">
         <div className="ml-[30%] w-full max-w-5xl text-justify">
           <div className="float-left h-8 w-40 flex items-center">
             <span className="text-gray-400 text-sm">
@@ -189,9 +200,17 @@ export const Dimo = () => {
           </p>
         </div>
       </div>
-
-      <img src="/images/main-showcase-item.png" alt="" />
-
+      <div className="flex container mx-auto mb-40">
+        {" "}
+        <div className="w-[50%] flex justify-center mb-64">
+          {" "}
+          <img src="/images/dimo/iphone-14-pro4.png" alt="" />
+        </div>
+        <div className="w-[50%] flex justify-center mt-64">
+          {" "}
+          <img src="/images/dimo/iphone-14-pro5.png" alt="" />
+        </div>
+      </div>
       <div className="flex container mx-auto pb-40">
         <div className="container mx-auto mt-10 pb-20">
           <div className="w-full max-w-2xl">
@@ -204,7 +223,7 @@ export const Dimo = () => {
           </div>
         </div>
       </div>
-
+      <FullPageImage path="/images/dimo/fleet-mockup3.png" margin="mb-40" />
       <div className="w-full flex flex-col items-center justify-center pb-40">
         <div
           className="text-center text-white w-full max-w-6xl leading-none"
@@ -216,12 +235,7 @@ export const Dimo = () => {
           </span>
         </div>
       </div>
-
-      <div className="container mx-auto border-b-[1px] border-t-[1px] text-white mb-20">
-        <p className="text-8xl">Next →</p>
-        <p className="text-2xl">Pods Design System</p>
-      </div>
-
+      <NavigateToNeighboringPage previousProject="" nextProject="PODS System" />
       {/* FOOTER */}
       <div className="h-16 w-full bg-transparent fixed bottom-0">
         <div className="container mx-auto flex justify-between items-center h-full text-white text-sm">
