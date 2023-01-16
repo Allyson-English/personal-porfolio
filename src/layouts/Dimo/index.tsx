@@ -109,7 +109,7 @@ export const Dimo = () => {
         </div>
       </div>
       <FullPageImage path="/images/dimo/phones-color.png" margin="" />
-      <FullPageImage path="/images/dimo/dimo-scene.png" margin="" />
+      <FullPageImage path="/images/dimo/dimo-scene.png" margin="mb-40" />
 
       <div className="flex container mx-auto mb-40">
         {" "}
