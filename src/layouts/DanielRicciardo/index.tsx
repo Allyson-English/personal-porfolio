@@ -3,6 +3,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { FullPageImage } from "../../components/full_page_img";
 import { SideBySideImages } from "../../components/img_side_by_side";
 import { NavigateToNeighboringPage } from "../../components/navigation_prev_or_next";
+import { TitleAndKeystoneImage } from "../../components/title_and_keystone";
 import { CallToAction } from "../Home/CallToAction";
 import { Outtro } from "../Home/Outtro";
 
@@ -18,7 +19,6 @@ export const DanielRicciardo = () => {
     //   containerRef={containerRef}
     // >
     <main className="bg-black" data-scroll-container ref={containerRef}>
-      {/* HEADER */}
       <div className="h-24 w-full bg-transparent sticky top-0 z-20">
         <div className="container mx-auto flex justify-between items-center h-full">
           <div className="text-white text-lg font-medium">Ben</div>
@@ -28,9 +28,17 @@ export const DanielRicciardo = () => {
           </button>
         </div>
       </div>
-      <p className="text-white font-normal text-[232px] text-center">
-        Daniel Ricciardo
-      </p>
+      <div className="flex flex-col w-[90%] mx-auto mb-64 items-center">
+        <img
+          className="block mx-auto z-50"
+          src="/images/daniel-ricciardo/dr-keystone.png"
+          alt=""
+        />
+        <p className="text-white font-normal absolute text-[232px] mx-auto mt-16">
+          Daniel Ricciardo
+        </p>
+      </div>
+
       <div className="container mx-auto flex justify-between border-b-[1px] pb-20">
         <table className="text-xl">
           <tbody>

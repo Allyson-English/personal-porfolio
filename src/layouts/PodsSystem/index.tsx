@@ -28,10 +28,16 @@ export const PodsSystem = () => {
           </button>
         </div>
       </div>
-
-      <p className="text-white font-normal text-[232px] text-center">
-        Pods System
-      </p>
+      <div className="flex flex-col w-[90%] mx-auto mb-40 items-center">
+        <img
+          className="block mx-auto z-50"
+          src="/images/pods-system/pods-keystone.png"
+          alt=""
+        />
+        <p className="text-white font-normal absolute text-[232px] mx-auto mt-16">
+          Pods System
+        </p>
+      </div>
 
       <div className="container mx-auto flex justify-between border-b-[1px] pb-20">
         <table className="text-xl">

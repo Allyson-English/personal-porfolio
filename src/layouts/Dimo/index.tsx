@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { FullPageImage } from "../../components/full_page_img";
 import { NavigateToNeighboringPage } from "../../components/navigation_prev_or_next";
+import { TitleAndKeystoneImage } from "../../components/title_and_keystone";
 import { CallToAction } from "../Home/CallToAction";
 import { Outtro } from "../Home/Outtro";
 
@@ -27,9 +28,17 @@ export const Dimo = () => {
           </button>
         </div>
       </div>
-      <p className="text-white font-normal text-[232px] text-center">
-        DIMO Mobile
-      </p>
+      <div className="flex flex-col w-[90%] mx-auto mb-40 items-center">
+        <img
+          className="block mx-auto z-50"
+          src="/images/dimo/dimo-keystone.png"
+          alt=""
+        />
+        <p className="text-white font-normal absolute text-[232px] mx-auto mt-16">
+          DIMO Mobile
+        </p>
+      </div>
+
       <div className="container mx-auto flex justify-between border-b-[1px] pb-20">
         <table className="text-xl">
           <tbody>
