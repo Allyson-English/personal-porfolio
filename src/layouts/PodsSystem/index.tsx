@@ -126,6 +126,7 @@ export const PodsSystem = () => {
       <SideBySideImages
         path1={"/images/pods-system/frame-512824.png"}
         path2={"/images/pods-system/frame-512825.png"}
+        parentClass=""
       />
 
       <FullPageImage
@@ -136,6 +137,7 @@ export const PodsSystem = () => {
       <SideBySideImages
         path1={"/images/dimo/frame-512824.png"}
         path2={"/images/dimo/frame-512825.png"}
+        parentClass=""
       />
 
       <FullPageImage

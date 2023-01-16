@@ -1,11 +1,16 @@
 interface SideBySideImagePaths {
   path1: string;
   path2: string;
+  parentClass: string;
 }
 
-export const SideBySideImages = ({ path1, path2 }: SideBySideImagePaths) => {
+export const SideBySideImages = ({
+  path1,
+  path2,
+  parentClass,
+}: SideBySideImagePaths) => {
   return (
-    <div className="flex container mx-auto mb-40">
+    <div className={`flex container mx-auto ${parentClass}`}>
       {" "}
       <div className="w-[50%] flex justify-center">
         {" "}

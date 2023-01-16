@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { RecoilRoot, useRecoilValue } from "recoil";
 import { locationState } from "./atoms/scroll";
+import { DanielRicciardo } from "./layouts/DanielRicciardo";
 import { Dimo } from "./layouts/Dimo";
 import { Home } from "./layouts/Home";
 import { PodsSystem } from "./layouts/PodsSystem";
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/projects/dreamfield",
     element: <Dimo />,
+  },
+  {
+    path: "/projects/daniel-ricciardo",
+    element: <DanielRicciardo />,
   },
 ]);
 
