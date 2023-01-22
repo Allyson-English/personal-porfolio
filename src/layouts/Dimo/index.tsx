@@ -1,5 +1,11 @@
 import { useEffect, useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { Footer } from "../../components/Footer";
+import { Header } from "../../components/Header";
+import { Description } from "./Description";
+import { FirstShowcase } from "./FirstShowcase";
+import { Hero } from "./Hero";
+import { MainImage } from "./MainImage";
 
 export const Dimo = () => {
   const containerRef = useRef(null);
@@ -8,29 +14,22 @@ export const Dimo = () => {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
+        reloadOnContextChange: true,
       }}
       watch={[]}
       containerRef={containerRef}
     >
       <main className="bg-black" data-scroll-container ref={containerRef}>
         {/* HEADER */}
-        <div className="h-24 w-full bg-transparent sticky top-0 z-20">
-          <div className="container mx-auto flex justify-between items-center h-full">
-            <div className="text-white text-lg font-medium">Ben</div>
-            <div className="text-white"></div>
-            <button className="text-white border border-white px-8 py-1 rounded-full">
-              Contact
-            </button>
-          </div>
-        </div>
+        <Header />
+
+        <Hero />
+        <MainImage />
+        {/* <Description /> */}
+        {/* <FirstShowcase /> */}
 
         {/* FOOTER */}
-        <div className="h-16 w-full bg-transparent fixed bottom-0">
-          <div className="container mx-auto flex justify-between items-center h-full text-white text-sm">
-            <span className="">PORTFOLIO 2020 - 2022</span>
-            <span className="">UPDATED NOVEMBER 20, 2022</span>
-          </div>
-        </div>
+        <Footer />
       </main>
     </LocomotiveScrollProvider>
   );

@@ -1,4 +1,5 @@
 import { useLocomotiveScroll } from "react-locomotive-scroll";
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   // const { scroll } = useLocomotiveScroll();
@@ -75,7 +76,8 @@ export const Projects = () => {
           </div>
         </div>
 
-        <div
+        <Link
+          to="/projects/daniel-ricciardo"
           className="w-[840px] absolute left-64 top-[1000px] z-[14]"
           data-scroll
           data-scroll-speed="9"
@@ -85,7 +87,7 @@ export const Projects = () => {
             <p className="text-white text-sm w-64">Daniel Ricciardo</p>
             <p className="flex-1 text-gray-400 text-sm">Web</p>
           </div>
-        </div>
+        </Link>
 
         <div
           className="w-[320px] absolute left-0 top-[1540px] z-[15]"
