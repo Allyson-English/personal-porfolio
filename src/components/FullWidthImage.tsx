@@ -2,7 +2,6 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import { OnScrollEvent } from "locomotive-scroll";
 import { useEffect } from "react";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
-import { Parallax } from "react-parallax";
 
 interface FullWidthImageProps {
   targetId: string;
@@ -35,7 +34,7 @@ export const FullWidthImage = ({ targetId, src }: FullWidthImageProps) => {
       data-scroll
       data-scroll-id={`${targetId}-scroll`}
     >
-      <img {...{ src }} alt="" className="w-auto h-full" />
+      <img {...{ src }} alt="" className="w-full h-auto" />
 
       <motion.div
         className="w-full h-24 absolute top-0 left-0 right-0 bg-black"
@@ -45,14 +44,6 @@ export const FullWidthImage = ({ targetId, src }: FullWidthImageProps) => {
         className="w-full h-24 absolute bottom-0 left-0 right-0 bg-black"
         style={{ y: bottomY }}
       />
-
-      {/* <Parallax
-        // blur={10}
-        bgImage={src}
-        style={{ width: "100%", height: "100vh" }}
-        bgImageStyle={{ width: "100%", height: "100vh" }}
-        strength={200}
-      /> */}
     </div>
   );
 };

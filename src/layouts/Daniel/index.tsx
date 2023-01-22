@@ -30,7 +30,11 @@ export const Daniel = () => {
         <Header />
 
         <ReusableHero
-          title="Daniel Ricciardo"
+          titleComponent={
+            <h1 className="font-bold text-[190px] text-center">
+              Daniel Ricciardo
+            </h1>
+          }
           about="A redesign concept for Formula 1 Racing driver Daniel Ricciardo's website. The concept upgrades Ricciardo's existing, lackluster website."
           items={[
             {

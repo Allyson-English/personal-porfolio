@@ -1,16 +1,17 @@
 import { useMeasure } from "react-use";
 import { ListItem } from "./ListItem";
 import { Textfit } from "react-textfit";
+import { ReactNode } from "react";
 
 interface ReusableHeroProps {
-  title: string;
+  titleComponent: ReactNode;
   about: string;
   items: { label: string; value: string }[];
   projectUrl: string;
 }
 
 export const ReusableHero = ({
-  title,
+  titleComponent,
   about,
   items,
   projectUrl,
@@ -24,7 +25,7 @@ export const ReusableHero = ({
       data-scroll-section
     >
       <div className="flex-1 flex items-center justify-center relative text-white font-bold">
-        <Textfit mode="single">{title}</Textfit>
+        {titleComponent}
       </div>
       <div className="h-72 flex container mx-auto">
         <div className="w-80 space-y-4">
