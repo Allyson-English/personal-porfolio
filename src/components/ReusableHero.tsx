@@ -2,6 +2,7 @@ import { useMeasure } from "react-use";
 import { ListItem } from "./ListItem";
 import { Textfit } from "react-textfit";
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface ReusableHeroProps {
   titleComponent: ReactNode;
@@ -41,12 +42,38 @@ export const ReusableHero = ({
             <p className="text-xl text-white leading-normal">{about}</p>
           </div>
         </div>
-        <a
+        <motion.a
           href={projectUrl}
           className="h-48 w-48 border border-white rounded-full flex items-center justify-center"
+          variants={{
+            inactive: {
+              background: "black",
+            },
+            active: {
+              background: "white",
+            },
+          }}
+          initial={"inactive"}
+          whileHover={"active"}
+          transition={{
+            duration: 2000,
+            type: "tween",
+          }}
         >
-          <p className="text-white">Live project</p>
-        </a>
+          <motion.p
+            className="text-white"
+            variants={{
+              inactive: {
+                color: "white",
+              },
+              active: {
+                color: "black",
+              },
+            }}
+          >
+            Live project
+          </motion.p>
+        </motion.a>
       </div>
     </div>
   );
