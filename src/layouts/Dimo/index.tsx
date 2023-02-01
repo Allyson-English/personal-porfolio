@@ -117,8 +117,11 @@ export const Dimo = () => {
           </p>
         </div>
       </div>
-      <FullPageImage path="/images/dimo/phones-color.png" margin="" />
-      <FullPageImage path="/images/dimo/dimo-scene.png" margin="mb-40" />
+
+      <div className="mb-40 -space-y-10">
+        <FullPageImage path="/images/dimo/phones-color.png" margin="" />
+        <FullPageImage path="/images/dimo/dimo-scene.png" margin="mb-40" />
+      </div>
 
       <div className="flex container mx-auto mb-40">
         {" "}

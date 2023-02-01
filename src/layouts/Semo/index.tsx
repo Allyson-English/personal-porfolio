@@ -120,7 +120,7 @@ export const Semo = () => {
       <SideBySideImages
         path1={"/images/semo/frame-512824.png"}
         path2={"/images/semo/frame-512825.png"}
-        parentClass="mb-40"
+        parentClass="mb-40 -space-x-24"
       />
 
       <FullPageImage path="/images/semo/semo-image.png" margin=" mb-40" />
@@ -170,7 +170,7 @@ export const Semo = () => {
       <SideBySideImages
         path1={"/images/semo/frame-512840.png"}
         path2={"/images/semo/frame-512841.png"}
-        parentClass="mt-40 mb-40"
+        parentClass="mt-40 mb-40 -space-x-24"
       />
 
       <div className="flex flex-col w-[90%] mx-auto mt-20">

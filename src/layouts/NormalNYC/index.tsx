@@ -202,6 +202,6 @@ export const NormalNYC = () => {
         </div>
       </div>
     </main>
-    // {/* </LocomotiveScrollProvider> */}
+    // </LocomotiveScrollProvider>
   );
 };
