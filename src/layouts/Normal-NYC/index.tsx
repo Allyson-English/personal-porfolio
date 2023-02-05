@@ -3,16 +3,16 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { BoldStatement } from "../../components/BoldStatement";
 import { BottomNavigation } from "../../components/BottomNavigation";
 import { CallToAction } from "../../components/CallToAction";
-import { Description } from "../../components/Description";
+// import { Description } from "../../components/Description";
 import { Footer } from "../../components/Footer";
 import { FullContainerImage } from "../../components/FullContainerImage";
 import { FullWidthImage } from "../../components/FullWidthImage";
-import { FullWidthImage3 } from "../../components/FullWidthImage3";
+// import { FullWidthImage3 } from "../../components/FullWidthImage3";
 import { Header } from "../../components/Header";
-import { MainImage } from "../../components/MainImage";
+// import { MainImage } from "../../components/MainImage";
 import { PageSpace } from "../../components/PageSpace";
 import { ReusableHero } from "../../components/ReusableHero";
-import { SideBySidePhone } from "../../components/SideBySide";
+// import { SideBySidePhone } from "../../components/SideBySide";
 import { UnderlayImage } from "../../components/UnderlayImage";
 
 export const NormalNYC = () => {
@@ -58,7 +58,7 @@ export const NormalNYC = () => {
           // keystoneImage=""
         />
 
-        <MainImage
+        {/* <MainImage
           sectionBreak="true"
           path="/images/normal-nyc/normal-cover.png"
         />
@@ -66,7 +66,7 @@ export const NormalNYC = () => {
           mywork="Normal’s site was launched to complement its 90k+ follower Instagram account and host more in-depth interview content."
           paragraph1="Normal was seeking an “art gallery” style of visual direction in which the site’s branding and colors wouldn’t clash with or dominate the photo or interview content. "
           paragraph2="We decided to use a very neutral palette to create a calm and sophisticated look for the blog along with a basic text-based wordmark. Our goal was to remain calm, inviting, and sophisticated while remaining recognizable and authentic."
-        />
+        /> */}
 
         <PageSpace size="s" />
 
@@ -75,20 +75,20 @@ export const NormalNYC = () => {
           src="/images/normal-nyc/normal-frame-512826.png"
         />
 
-        <SideBySidePhone
+        {/* <SideBySidePhone
           pathOne={"/images/normal-nyc/normal-mobile-1.png"}
           pathTwo={"/images/normal-nyc/normal-mobile-2.png"}
-        />
+        /> */}
 
         {/* <FullWidthImage
           targetId="normal-frame-512856"
           src="/images/normal-nyc/normal-frame-512856.png"
         /> */}
 
-        <FullWidthImage3
+        {/* <FullWidthImage3
           targetId="test2123er"
           src="/images/normal-nyc/normal-3.png"
-        />
+        /> */}
 
         {/* // here 
         <FullWidthImage
@@ -124,7 +124,10 @@ export const NormalNYC = () => {
         <PageSpace size="m" />
 
         <BoldStatement text="Lorem ipsum get the file on Figma Community. Lorem ipsum number of copies made." />
-        <BottomNavigation label="Mint Sunday" />
+        <BottomNavigation
+          previousProject="DIMO Mobile"
+          nextProject="Mint Sunday"
+        />
 
         <CallToAction />
 

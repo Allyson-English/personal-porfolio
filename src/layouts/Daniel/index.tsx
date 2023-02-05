@@ -91,7 +91,10 @@ export const Daniel = () => {
           </div>
         </div>
 
-        <BottomNavigation label="Mint Sunday" />
+        <BottomNavigation
+          previousProject="DIMO Mobile"
+          nextProject="Mint Sunday"
+        />
 
         <CallToAction />
 
