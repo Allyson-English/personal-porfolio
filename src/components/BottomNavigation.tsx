@@ -1,21 +1,52 @@
 interface BottomNavigationProps {
-  label: string;
-  location?: string;
+  previousProject: string;
+  nextProject: string;
 }
 
 export const BottomNavigation = ({
-  label,
-  location,
+  previousProject,
+  nextProject,
 }: BottomNavigationProps) => {
+  if (previousProject === "") {
+    return (
+      <div className="h-[320px] w-full" data-scroll-section>
+        <div className="container flex mx-auto border-b-[1px] border-t-[1px] text-white mb-64 justify-between">
+          <div className="flex text-8xl">
+            <p></p>
+            <div className="">
+              <p className="text-8xl"></p>
+              <p className="text-2xl"></p>
+            </div>
+          </div>
+          <div className="flex text-8xl">
+            <div className="">
+              <p className="text-8xl">Next</p>
+              <p className="text-2xl">{nextProject}</p>
+            </div>
+            <p>→</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="h-[320px] w-full" data-scroll-section>
-      <div className="container mx-auto">
-        <div className="w-full bg-white h-[1px] mb-12"></div>
-        <div className="flex items-center">
-          <p className="text-white text-[96px] leading-[1.2]">Next</p>
+      <div className="container flex mx-auto border-b-[1px] border-t-[1px] text-white mb-64 justify-between">
+        <div className="flex text-8xl">
+          <p>←</p>
+          <div className="">
+            <p className="text-8xl">Previous</p>
+            <p className="text-2xl">{previousProject}</p>
+          </div>
         </div>
-        <p className="text-gray-300 text-lg">{label}</p>
-        <div className="w-full bg-white h-[1px] mt-12"></div>
+        <div className="flex text-8xl">
+          <div className="">
+            <p className="text-8xl">Next</p>
+            <p className="text-2xl">{nextProject}</p>
+          </div>
+          <p>→</p>
+        </div>
       </div>
     </div>
   );

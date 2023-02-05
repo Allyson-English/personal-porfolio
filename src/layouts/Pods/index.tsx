@@ -61,7 +61,10 @@ export const Pods = () => {
         <PageSpace size="m" />
 
         <BoldStatement text="Lorem ipsum get the file on Figma Community. Lorem ipsum number of copies made." />
-        <BottomNavigation label="Mint Sunday" />
+        <BottomNavigation
+          previousProject="DIMO Mobile"
+          nextProject="Mint Sunday"
+        />
 
         <CallToAction />
 

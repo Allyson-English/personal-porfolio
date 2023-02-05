@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Dimo />,
   },
   {
-    path: "/projects/mint-sunday",
+    path: "/projects/pods-system",
     element: <Pods />,
   },
   {
