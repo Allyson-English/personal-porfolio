@@ -1,9 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import { useBeforeUnload, useLocation } from "react-router-dom";
-import { useSetRecoilState } from "recoil";
-import { locationState } from "../../atoms/scroll";
-import { Contact } from "../../components/Contact";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 
