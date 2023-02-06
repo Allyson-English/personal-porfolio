@@ -15,7 +15,7 @@ import { UnderlayImage } from "../../components/UnderlayImage";
 import { Hero } from "./Hero";
 import { FloatingPhoneScreens } from "./iPhoneScreens";
 import { ScreenFloat } from "./ScreenFloat";
-import { ScreenFloat2 } from "./ScreenFloat2";
+import { ScreenFloat2, ScreenFloat3 } from "./ScreenFloat2";
 
 export const Daniel = () => {
   const containerRef = useRef(null);
@@ -75,6 +75,12 @@ export const Daniel = () => {
         />
 
         <ScreenFloat2 />
+        <ScreenFloat3 />
+
+        <FullWidthImage
+          targetId="dr-final"
+          src="/images/daniel-ricciardo/dr-final.png"
+        />
 
         <BottomNavigation
           previousProject="DIMO Mobile"
