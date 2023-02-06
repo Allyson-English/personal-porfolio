@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Allyson-English/personal-porfolio/static/css/main.2a0bdf19.css",
+    "main.js": "/Allyson-English/personal-porfolio/static/js/main.84981918.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Allyson-English/personal-porfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/PPNeueMontreal-Medium.otf": "/Allyson-English/personal-porfolio/static/media/PPNeueMontreal-Medium.b604bc34ed28cb1c20b3.otf",
+    "static/media/PPNeueMontreal-Bold.otf": "/Allyson-English/personal-porfolio/static/media/PPNeueMontreal-Bold.a5585efb70f888db7b5c.otf",
+    "static/media/PPNeueMontreal-Book.otf": "/Allyson-English/personal-porfolio/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
+    "static/media/PPNeueMontreal-Thin.otf": "/Allyson-English/personal-porfolio/static/media/PPNeueMontreal-Thin.79ab813ef18c7e673de5.otf",
+    "index.html": "/Allyson-English/personal-porfolio/index.html",
+    "main.2a0bdf19.css.map": "/Allyson-English/personal-porfolio/static/css/main.2a0bdf19.css.map",
+    "main.84981918.js.map": "/Allyson-English/personal-porfolio/static/js/main.84981918.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Allyson-English/personal-porfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a0bdf19.css",
+    "static/js/main.84981918.js"
+  ]
+}
