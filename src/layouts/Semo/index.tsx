@@ -11,12 +11,11 @@ import { PageSpace } from "../../components/PageSpace";
 import { UnderlayImage } from "../../components/UnderlayImage";
 import { Description } from "./Description";
 import { Hero } from "./Hero";
-import { FloatingPhoneScreens } from "./iPhoneScreens";
 import { MainImage } from "./MainImage";
 import { Showcase } from "./Showcase";
 import { Thirds1, Thirds2, Thirds3 } from "./Thirds";
 
-export const NormalNYC = () => {
+export const Semo = () => {
   const containerRef = useRef(null);
 
   return (
@@ -37,41 +36,36 @@ export const NormalNYC = () => {
         <Description />
         <PageSpace size="s" />
         <FullContainerImage
-          targetId="normal-frame-512826"
-          src="/images/normal-nyc/normal-frame-512826.png"
+          targetId="semo-frame-512826"
+          src="/images/semo/semo-frame-512826.png"
         />
         <PageSpace size="s" />
-        <FloatingPhoneScreens />
         <FullWidthImage
-          targetId="normal-frame-512856"
-          src="/images/normal-nyc/normal-frame-512856.png"
+          targetId="semo-image"
+          src="/images/semo/semo-image.png"
         />
 
         <Thirds1 />
+        <Thirds2 />
 
-        <FullWidthImage
-          targetId="normal-frame-512859"
-          src="/images/normal-nyc/normal-frame-512859.png"
+        <FullContainerImage
+          targetId="semo-mac"
+          src="/images/semo/semo-mac.png"
+        />
+        <FullContainerImage
+          targetId="semo-group-512793"
+          src="/images/semo/semo-group-512793.png"
+        />
+        <FullContainerImage
+          targetId="semo-frame-512838"
+          src="/images/semo/frame-512838.png"
         />
 
-        <FullWidthImage
-          targetId="normal-studio-display"
-          src="public/images/normal-nyc/normal-studio-display.png"
-        />
+        <Thirds3 />
 
-        <FullWidthImage
-          targetId="normal-scene"
-          src="/images/normal-nyc/normal-premade-scene.png"
-        />
-
-        <FullWidthImage
-          targetId="normal-frame-512858"
-          src="/images/normal-nyc/normal-frame-512858.png"
-        />
-
-        <FullWidthImage
-          targetId="normal-img-7"
-          src="/images/normal-nyc/normal-img-7.png"
+        <FullContainerImage
+          targetId="semo-spread"
+          src="/images/semo/semo-spread.png"
         />
 
         <BoldStatement text="Lorem ipsum get the file on Figma Community. Lorem ipsum number of copies made." />

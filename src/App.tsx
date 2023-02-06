@@ -11,7 +11,9 @@ import { locationState } from "./atoms/scroll";
 import { Daniel } from "./layouts/Daniel";
 import { Dimo } from "./layouts/Dimo";
 import { Home } from "./layouts/Home";
+import { NormalNYC } from "./layouts/Normal-NYC";
 import { Pods } from "./layouts/Pods";
+import { Semo } from "./layouts/Semo";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +29,12 @@ const router = createBrowserRouter([
     element: <Pods />,
   },
   {
-    path: "/projects/dreamfield",
-    element: <Dimo />,
+    path: "/projects/normal-nyc",
+    element: <NormalNYC />,
+  },
+  {
+    path: "/projects/semo",
+    element: <Semo />,
   },
   {
     path: "/projects/daniel-ricciardo",
