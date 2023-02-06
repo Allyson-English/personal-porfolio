@@ -19,19 +19,19 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "personal-porfolio/projects/dimo",
+    path: "/projects/dimo",
     element: <Dimo />,
   },
   {
-    path: "personal-porfolio/projects/pods-system",
+    path: "/projects/pods-system",
     element: <Pods />,
   },
   {
-    path: "personal-porfolio/projects/dreamfield",
+    path: "/projects/dreamfield",
     element: <Dimo />,
   },
   {
-    path: "personal-porfolio/projects/daniel-ricciardo",
+    path: "/projects/daniel-ricciardo",
     element: <Daniel />,
   },
 ]);
