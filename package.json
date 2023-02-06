@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/Allyson-English/personal-porfolio",
+  "homepage": "http://www.allysonenglish.io/personal-porfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build --remote prod",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
