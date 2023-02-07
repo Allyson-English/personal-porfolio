@@ -1,11 +1,15 @@
 interface BottomNavigationProps {
   previousProject: string;
+  previousProjectURL: string;
   nextProject: string;
+  nextProjectURL: string;
 }
 
 export const BottomNavigation = ({
   previousProject,
+  previousProjectURL,
   nextProject,
+  nextProjectURL,
 }: BottomNavigationProps) => {
   if (previousProject === "") {
     return (
@@ -36,13 +40,17 @@ export const BottomNavigation = ({
         <div className="flex text-8xl">
           <p>←</p>
           <div className="">
-            <p className="text-8xl">Previous</p>
+            <p className="text-8xl">
+              <a href={previousProjectURL}>Previous</a>
+            </p>
             <p className="text-2xl">{previousProject}</p>
           </div>
         </div>
         <div className="flex text-8xl">
           <div className="">
-            <p className="text-8xl">Next</p>
+            <p className="text-8xl">
+              <a href={nextProjectURL}>Next</a>
+            </p>
             <p className="text-2xl">{nextProject}</p>
           </div>
           <p>→</p>

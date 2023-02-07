@@ -71,7 +71,9 @@ export const Daniel = () => {
 
         <BottomNavigation
           previousProject="DIMO Mobile"
+          previousProjectURL="./#/projects/daniel-ricciardo"
           nextProject="Mint Sunday"
+          nextProjectURL="../#/projects/daniel-ricciardo"
         />
 
         <CallToAction />
