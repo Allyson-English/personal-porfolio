@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-porfolio/static/css/main.96d40708.css",
-    "main.js": "/personal-porfolio/static/js/main.921d5b82.js",
+    "main.js": "/personal-porfolio/static/js/main.567948a7.js",
     "static/js/787.5b3f80df.chunk.js": "/personal-porfolio/static/js/787.5b3f80df.chunk.js",
     "static/media/daniel-main.png": "/personal-porfolio/static/media/daniel-main.f18b7a9f09e0918653d1.png",
     "static/media/semo-image.png": "/personal-porfolio/static/media/semo-image.3c9ee1ba3bf922896784.png",
@@ -12,6 +12,7 @@
     "static/media/normal-frame-512856.png": "/personal-porfolio/static/media/normal-frame-512856.cd96300b6cb63d02a9d5.png",
     "static/media/main-showcase-item.png": "/personal-porfolio/static/media/main-showcase-item.82541886912f1b375f48.png",
     "static/media/normal-frame-512859.png": "/personal-porfolio/static/media/normal-frame-512859.1244381df0bf8539569c.png",
+    "static/media/semo-homepage.png": "/personal-porfolio/static/media/semo-homepage.122cd55fdee3278c233b.png",
     "static/media/dr-music.png": "/personal-porfolio/static/media/dr-music.bd6b3b4f831c7fb23a3b.png",
     "static/media/normal-frame-512858.png": "/personal-porfolio/static/media/normal-frame-512858.d4e33f19656bf601087e.png",
     "static/media/dr-story-so-far.png": "/personal-porfolio/static/media/dr-story-so-far.86b9145bf5aac503139d.png",
@@ -28,6 +29,7 @@
     "static/media/normal-studio-display.png": "/personal-porfolio/static/media/normal-studio-display.6493793fde9fa7f0c601.png",
     "static/media/dr-spread-6b.png": "/personal-porfolio/static/media/dr-spread-6b.3d5ef5f3ad59f5ed59ad.png",
     "static/media/normal-premade-scene.png": "/personal-porfolio/static/media/normal-premade-scene.4d1fbbb30495593d8dcc.png",
+    "static/media/semo-mobile-login.png": "/personal-porfolio/static/media/semo-mobile-login.25b3e87ddad7d9dd8cad.png",
     "static/media/dr-mobile-2.png": "/personal-porfolio/static/media/dr-mobile-2.0a9974f5a0fa47eb18b2.png",
     "static/media/pods.png": "/personal-porfolio/static/media/pods.c915bd9c3181ef7441ac.png",
     "static/media/dr-spread-6a.png": "/personal-porfolio/static/media/dr-spread-6a.b89be64e1044cef6ab73.png",
@@ -44,16 +46,18 @@
     "static/media/pods-wireframe-one.png": "/personal-porfolio/static/media/pods-wireframe-one.de41aec237c47be02142.png",
     "static/media/pods-keystone.png": "/personal-porfolio/static/media/pods-keystone.4d4377dece2ebbebbe5c.png",
     "static/media/semo-group-512793.png": "/personal-porfolio/static/media/semo-group-512793.2a72be15e558c6585bca.png",
+    "static/media/semo-mobile-score.png": "/personal-porfolio/static/media/semo-mobile-score.e2b7d41a4e219d3dd85b.png",
+    "static/media/semo-mobile-report.png": "/personal-porfolio/static/media/semo-mobile-report.267a0ab6b5b400033174.png",
     "static/media/semo-frame-512826.png": "/personal-porfolio/static/media/semo-frame-512826.68aec13c323873413087.png",
     "static/media/dr-frame-512826.png": "/personal-porfolio/static/media/dr-frame-512826.c473c042570eb2fc4a4e.png",
     "static/media/normal-frame-512826.png": "/personal-porfolio/static/media/normal-frame-512826.569506fed2b07159c6be.png",
     "index.html": "/personal-porfolio/index.html",
     "main.96d40708.css.map": "/personal-porfolio/static/css/main.96d40708.css.map",
-    "main.921d5b82.js.map": "/personal-porfolio/static/js/main.921d5b82.js.map",
+    "main.567948a7.js.map": "/personal-porfolio/static/js/main.567948a7.js.map",
     "787.5b3f80df.chunk.js.map": "/personal-porfolio/static/js/787.5b3f80df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96d40708.css",
-    "static/js/main.921d5b82.js"
+    "static/js/main.567948a7.js"
   ]
 }
