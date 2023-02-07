@@ -1,21 +1,37 @@
 {
   "files": {
     "main.css": "/personal-porfolio/static/css/main.96d40708.css",
-    "main.js": "/personal-porfolio/static/js/main.ecc9121c.js",
+    "main.js": "/personal-porfolio/static/js/main.c236a260.js",
     "static/js/787.5b3f80df.chunk.js": "/personal-porfolio/static/js/787.5b3f80df.chunk.js",
+    "static/media/daniel-main.png": "/personal-porfolio/static/media/daniel-main.f18b7a9f09e0918653d1.png",
+    "static/media/dr-final.png": "/personal-porfolio/static/media/dr-final.244cf14a9fe4518963dc.png",
+    "static/media/dr-art-dept.png": "/personal-porfolio/static/media/dr-art-dept.3336b1b435c0fbae74c1.png",
+    "static/media/dr-mobile-1.png": "/personal-porfolio/static/media/dr-mobile-1.e685da394edc7d3bad06.png",
     "static/media/main-showcase-item.png": "/personal-porfolio/static/media/main-showcase-item.82541886912f1b375f48.png",
+    "static/media/dr-music.png": "/personal-porfolio/static/media/dr-music.bd6b3b4f831c7fb23a3b.png",
+    "static/media/dr-story-so-far.png": "/personal-porfolio/static/media/dr-story-so-far.86b9145bf5aac503139d.png",
+    "static/media/dr-spread.png": "/personal-porfolio/static/media/dr-spread.cef23c73dcf18950fdd2.png",
+    "static/media/dr-spread-5a.png": "/personal-porfolio/static/media/dr-spread-5a.8c69051bd73a6643c567.png",
+    "static/media/dr-spread-3.png": "/personal-porfolio/static/media/dr-spread-3.235d70d9385a54d4b12c.png",
+    "static/media/dr-spread-5b.png": "/personal-porfolio/static/media/dr-spread-5b.2fe7500700b523bdd740.png",
+    "static/media/dr-spread-7a.png": "/personal-porfolio/static/media/dr-spread-7a.98a360de5fa3169ce937.png",
+    "static/media/dr-spread-6b.png": "/personal-porfolio/static/media/dr-spread-6b.3d5ef5f3ad59f5ed59ad.png",
+    "static/media/dr-mobile-2.png": "/personal-porfolio/static/media/dr-mobile-2.0a9974f5a0fa47eb18b2.png",
     "static/media/pods.png": "/personal-porfolio/static/media/pods.c915bd9c3181ef7441ac.png",
+    "static/media/dr-spread-6a.png": "/personal-porfolio/static/media/dr-spread-6a.b89be64e1044cef6ab73.png",
+    "static/media/dr-spread-7b.png": "/personal-porfolio/static/media/dr-spread-7b.57e068e2408507226450.png",
     "static/media/PPNeueMontreal-Medium.otf": "/personal-porfolio/static/media/PPNeueMontreal-Medium.b604bc34ed28cb1c20b3.otf",
     "static/media/PPNeueMontreal-Bold.otf": "/personal-porfolio/static/media/PPNeueMontreal-Bold.a5585efb70f888db7b5c.otf",
     "static/media/PPNeueMontreal-Book.otf": "/personal-porfolio/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
     "static/media/PPNeueMontreal-Thin.otf": "/personal-porfolio/static/media/PPNeueMontreal-Thin.79ab813ef18c7e673de5.otf",
+    "static/media/dr-frame-512826.png": "/personal-porfolio/static/media/dr-frame-512826.c473c042570eb2fc4a4e.png",
     "index.html": "/personal-porfolio/index.html",
     "main.96d40708.css.map": "/personal-porfolio/static/css/main.96d40708.css.map",
-    "main.ecc9121c.js.map": "/personal-porfolio/static/js/main.ecc9121c.js.map",
+    "main.c236a260.js.map": "/personal-porfolio/static/js/main.c236a260.js.map",
     "787.5b3f80df.chunk.js.map": "/personal-porfolio/static/js/787.5b3f80df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96d40708.css",
-    "static/js/main.ecc9121c.js"
+    "static/js/main.c236a260.js"
   ]
 }
