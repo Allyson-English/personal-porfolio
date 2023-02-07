@@ -15,6 +15,13 @@ import { MainImage } from "./MainImage";
 import { Showcase } from "./Showcase";
 import { Thirds1, Thirds2, Thirds3 } from "./Thirds";
 
+import SemoFrame512826 from "../../images/semo/semo-frame-512826.png";
+import SemoImage from "../../images/semo/semo-image.png";
+import SemoMac from "../../images/semo/semo-mac.png";
+import SemoGroup512793 from "../../images/semo/semo-group-512793.png";
+import SemoFrame512838 from "../../images/semo/frame-512838.png";
+import SemoSpread from "../../images/semo/semo-spread.png";
+
 export const Semo = () => {
   const containerRef = useRef(null);
 
@@ -37,36 +44,27 @@ export const Semo = () => {
         <PageSpace size="s" />
         <FullContainerImage
           targetId="semo-frame-512826"
-          src="/images/semo/semo-frame-512826.png"
+          src={SemoFrame512826}
         />
         <PageSpace size="s" />
-        <FullWidthImage
-          targetId="semo-image"
-          src="/images/semo/semo-image.png"
-        />
+        <FullWidthImage targetId="semo-image" src={SemoImage} />
 
         <Thirds1 />
         <Thirds2 />
 
-        <FullContainerImage
-          targetId="semo-mac"
-          src="/images/semo/semo-mac.png"
-        />
+        <FullContainerImage targetId="semo-mac" src={SemoMac} />
         <FullContainerImage
           targetId="semo-group-512793"
-          src="/images/semo/semo-group-512793.png"
+          src={SemoGroup512793}
         />
         <FullContainerImage
           targetId="semo-frame-512838"
-          src="/images/semo/frame-512838.png"
+          src={SemoFrame512838}
         />
 
         <Thirds3 />
 
-        <FullContainerImage
-          targetId="semo-spread"
-          src="/images/semo/semo-spread.png"
-        />
+        <FullContainerImage targetId="semo-spread" src={SemoSpread} />
 
         <BoldStatement text="Lorem ipsum get the file on Figma Community. Lorem ipsum number of copies made." />
         <BottomNavigation
