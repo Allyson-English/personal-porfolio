@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/personal-porfolio/static/css/main.96d40708.css",
-    "main.js": "/personal-porfolio/static/js/main.5925d249.js",
+    "main.js": "/personal-porfolio/static/js/main.34b3d04d.js",
     "static/js/787.5b3f80df.chunk.js": "/personal-porfolio/static/js/787.5b3f80df.chunk.js",
+    "static/media/main-showcase-item.png": "/personal-porfolio/static/media/main-showcase-item.82541886912f1b375f48.png",
+    "static/media/pods.png": "/personal-porfolio/static/media/pods.c915bd9c3181ef7441ac.png",
     "static/media/PPNeueMontreal-Medium.otf": "/personal-porfolio/static/media/PPNeueMontreal-Medium.b604bc34ed28cb1c20b3.otf",
     "static/media/PPNeueMontreal-Bold.otf": "/personal-porfolio/static/media/PPNeueMontreal-Bold.a5585efb70f888db7b5c.otf",
     "static/media/PPNeueMontreal-Book.otf": "/personal-porfolio/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
     "static/media/PPNeueMontreal-Thin.otf": "/personal-porfolio/static/media/PPNeueMontreal-Thin.79ab813ef18c7e673de5.otf",
     "index.html": "/personal-porfolio/index.html",
     "main.96d40708.css.map": "/personal-porfolio/static/css/main.96d40708.css.map",
-    "main.5925d249.js.map": "/personal-porfolio/static/js/main.5925d249.js.map",
+    "main.34b3d04d.js.map": "/personal-porfolio/static/js/main.34b3d04d.js.map",
     "787.5b3f80df.chunk.js.map": "/personal-porfolio/static/js/787.5b3f80df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96d40708.css",
-    "static/js/main.5925d249.js"
+    "static/js/main.34b3d04d.js"
   ]
 }
