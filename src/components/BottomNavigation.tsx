@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface BottomNavigationProps {
   previousProject: string;
   previousProjectURL: string;
@@ -24,7 +26,7 @@ export const BottomNavigation = ({
           </div>
           <div className="flex text-8xl">
             <div className="">
-              <p className="text-8xl">Next</p>
+              <Link to={nextProjectURL}>Next</Link>
               <p className="text-2xl">{nextProject}</p>
             </div>
             <p>→</p>
@@ -41,7 +43,7 @@ export const BottomNavigation = ({
           <p>←</p>
           <div className="">
             <p className="text-8xl">
-              <a href={previousProjectURL}>Previous</a>
+              <Link to={previousProjectURL}>Previous</Link>
             </p>
             <p className="text-2xl">{previousProject}</p>
           </div>
@@ -49,7 +51,7 @@ export const BottomNavigation = ({
         <div className="flex text-8xl">
           <div className="">
             <p className="text-8xl">
-              <a href={nextProjectURL}>Next</a>
+              <Link to={nextProjectURL}>Next</Link>
             </p>
             <p className="text-2xl">{nextProject}</p>
           </div>
