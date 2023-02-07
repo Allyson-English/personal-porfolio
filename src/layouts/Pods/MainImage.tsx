@@ -1,4 +1,4 @@
-import PodsMain from "../../images/pods-main-image.png";
+import PodsMain from "../../images/pods-system/pods-main-image.png";
 
 export const MainImage = () => {
   return (

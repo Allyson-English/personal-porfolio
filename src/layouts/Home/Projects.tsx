@@ -1,6 +1,6 @@
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import { Link } from "react-router-dom";
-import pods from "../../images/pods.png";
+import pods from "../../images/pods-system/pods.png";
 
 export const Projects = () => {
   // const { scroll } = useLocomotiveScroll();
