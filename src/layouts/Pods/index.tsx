@@ -18,7 +18,7 @@ import PodsWireFrame1 from "../../images/pods-system/pods-wireframe-one.png";
 import PodsWireFrame1Underlay from "../../images/pods-system/pods-wireframe-one-underlay.png";
 import PodsWireFrame2 from "../../images/pods-system/pods-wireframe-two.png";
 import PodsWireFrame2Underlay from "../../images/pods-system/pods-wireframe-two-underlay.png";
-import PodsOther from "../../images/pods-system/pods-other.png";
+import PodsOther from "../../images/pods-system/pods-system/pods-other.png";
 import PodsShowcase2 from "../../images/pods-system/pods-second-showcase.png";
 import PodsShowcase from "../../images/pods-system/pods-showcase.png";
 
