@@ -1,5 +1,6 @@
 import { useMeasure } from "react-use";
 import { ListItem } from "../../components/ListItem";
+import PodsKeystone from "../../images/pods-system/pods-keystone.png";
 
 export const Hero = () => {
   const [ref, { width }] = useMeasure<HTMLDivElement>();
@@ -11,11 +12,7 @@ export const Hero = () => {
       data-scroll-section
     >
       <div className="flex flex-col w-[90%] mx-auto mb-40 items-center">
-        <img
-          className="block mx-auto z-50"
-          src="/images/pods-system/pods-keystone.png"
-          alt=""
-        />
+        <img className="block mx-auto z-50" src={PodsKeystone} alt="" />
         <p className="text-white font-normal absolute text-[232px] mx-auto mt-16">
           Pods System
         </p>

@@ -14,12 +14,13 @@ import { Hero } from "./Hero";
 import { MainImage } from "./MainImage";
 import { Showcase } from "./Showcase";
 
-import PodsWireFrame1 from "../../images/pods-wireframe-one.png";
-import PodsWireFrame1Underlay from "../../images/pods-wireframe-one-underlay.png";
-import PodsWireFrame2 from "../../images/pods-wireframe-two.png";
-import PodsWireFrame2Underlay from "../../images/pods-wireframe-two-underlay.png";
-import PodsOther from "../../images/pods-other.png";
-import PodsShowcase from "../../images/pods-second-showcase.png";
+import PodsWireFrame1 from "../../images/pods-system/pods-wireframe-one.png";
+import PodsWireFrame1Underlay from "../../images/pods-system/pods-wireframe-one-underlay.png";
+import PodsWireFrame2 from "../../images/pods-system/pods-wireframe-two.png";
+import PodsWireFrame2Underlay from "../../images/pods-system/pods-wireframe-two-underlay.png";
+import PodsOther from "../../images/pods-system/pods-other.png";
+import PodsShowcase2 from "../../images/pods-system/pods-second-showcase.png";
+import PodsShowcase from "../../images/pods-system/pods-showcase.png";
 
 export const Pods = () => {
   const containerRef = useRef(null);
@@ -41,7 +42,7 @@ export const Pods = () => {
         <MainImage />
         <Description />
         <PageSpace size="s" />
-        <FullWidthImage targetId="sc-one" src="/images/pods-showcase.png" />
+        <FullWidthImage targetId="sc-one" src={PodsShowcase} />
         <PageSpace size="l" />
         <UnderlayImage
           targetId="wf-one"
@@ -59,7 +60,7 @@ export const Pods = () => {
         <FullContainerImage targetId="fc-other" src={PodsOther} />
         <PageSpace size="l" />
 
-        <FullWidthImage targetId="sc-two" src={PodsShowcase} />
+        <FullWidthImage targetId="sc-two" src={PodsShowcase2} />
 
         <PageSpace size="m" />
 
