@@ -1,9 +1,13 @@
+import SemoMobileLogin from "../../images/semo/semo-mobile-login.png";
+import SemoMobileReport from "../../images/semo/semo-mobile-report.png";
+import SemoMobileScore from "../../images/semo/semo-mobile-score.png";
+
 export const Thirds1 = () => {
   return (
     <div className="w-full h-[1600px] bg-black" data-scroll-section>
       <div className="flex container mx-auto">
         <div className="w-[33%] flex justify-center ">
-          <img src="/images/semo/semo-mobile-login.png" alt="" />
+          <img src={SemoMobileLogin} alt="" />
         </div>
         <div className="w-[33%] flex justify-center "> </div>
         <div className="w-[33%] flex">
@@ -38,10 +42,10 @@ export const Thirds2 = () => {
           </div>
         </div>
         <div className="w-[33%] flex justify-center ">
-          <img src="/images/semo/semo-mobile-report.png" alt="" />
+          <img src={SemoMobileReport} alt="" />
         </div>
         <div className="w-[33%] flex justify-center ">
-          <img src="/images/semo/semo-mobile-score.png" alt="" />{" "}
+          <img src={SemoMobileScore} alt="" />{" "}
         </div>
       </div>
     </div>
