@@ -63,7 +63,9 @@ export const Pods = () => {
         <BoldStatement text="Lorem ipsum get the file on Figma Community. Lorem ipsum number of copies made." />
         <BottomNavigation
           previousProject="DIMO Mobile"
+          previousProjectURL="./#/projects/daniel-ricciardo"
           nextProject="Mint Sunday"
+          nextProjectURL="../#/projects/daniel-ricciardo"
         />
 
         <CallToAction />
