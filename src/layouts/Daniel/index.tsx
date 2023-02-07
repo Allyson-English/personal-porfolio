@@ -70,10 +70,10 @@ export const Daniel = () => {
         <FullWidthImage targetId="dr-final" src={drFinal} />
 
         <BottomNavigation
-          previousProject="DIMO Mobile"
-          previousProjectURL="./#/projects/daniel-ricciardo"
-          nextProject="Mint Sunday"
-          nextProjectURL="./#/projects/daniel-ricciardo"
+          previousProject="Semo"
+          previousProjectURL="/projects/semo"
+          nextProject="Daniel Ricciardo"
+          nextProjectURL="/projects/daniel-ricciardo"
         />
 
         <CallToAction />
