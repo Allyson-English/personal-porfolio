@@ -1,7 +1,7 @@
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import { Link } from "react-router-dom";
-import HomepageSemo from "../../images/pods-system/semo.png";
-import HomepagePods from "../../images/pods.png";
+import HomepageSemo from "../../images/semo.png";
+import HomepagePods from "../../images/pods-system/pods.png";
 import HomepageKahani from "../../images/kahani.png";
 import HomepageArchimedes from "../../images/archimedes.png";
 import HomepageDaniel from "../../images/daniel.png";
