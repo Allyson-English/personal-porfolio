@@ -79,7 +79,7 @@ export const NormalNYC = () => {
           previousProject="DIMO Mobile"
           previousProjectURL="./#/projects/daniel-ricciardo"
           nextProject="Mint Sunday"
-          nextProjectURL="../#/projects/daniel-ricciardo"
+          nextProjectURL="./#/projects/daniel-ricciardo"
         />
 
         <CallToAction />
