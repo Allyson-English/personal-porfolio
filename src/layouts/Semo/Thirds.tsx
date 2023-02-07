@@ -1,6 +1,7 @@
 import SemoMobileLogin from "../../images/semo/semo-mobile-login.png";
 import SemoMobileReport from "../../images/semo/semo-mobile-report.png";
 import SemoMobileScore from "../../images/semo/semo-mobile-score.png";
+import SemoMobileConnect from "../../images/semo/semo-mobile-connect.png";
 
 export const Thirds1 = () => {
   return (
@@ -69,7 +70,7 @@ export const Thirds3 = () => {
         </div>
         <div className="w-[33%] flex justify-center "></div>
         <div className="w-[33%] flex justify-center ">
-          <img src="/images/semo/semo-mobile-connect.png" alt="" />{" "}
+          <img src={SemoMobileConnect} alt="" />{" "}
         </div>
       </div>
     </div>

@@ -1,6 +1,12 @@
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import { Link } from "react-router-dom";
-import pods from "../../images/pods-system/pods.png";
+import HomepageSemo from "../../images/pods-system/semo.png";
+import HomepagePods from "../../images/pods.png";
+import HomepageKahani from "../../images/kahani.png";
+import HomepageArchimedes from "../../images/archimedes.png";
+import HomepageDaniel from "../../images/daniel.png";
+import HomepageNormalNYC from "../../images/normal-nyc.png";
+import HomepageUncurb from "../../images/uncurb.png";
 
 export const Projects = () => {
   // const { scroll } = useLocomotiveScroll();
@@ -34,7 +40,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="3"
         >
-          <img src={pods} alt="" className="w-full h-auto" />
+          <img src={HomepageSemo} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Semo</p>
             <p className="flex-1 text-gray-400 text-sm">Web, Mobile, System</p>
@@ -46,7 +52,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="9"
         >
-          <img src="/images/pods.png" alt="" className="w-full h-auto" />
+          <img src={HomepagePods} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Pods Expansion Pack</p>
             <p className="flex-1 text-gray-400 text-sm">System</p>
@@ -58,7 +64,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="6"
         >
-          <img src="/images/kahani.png" alt="" className="w-full h-auto" />
+          <img src={HomepageKahani} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Kahani</p>
             <p className="flex-1 text-gray-400 text-sm">Mobile</p>
@@ -70,7 +76,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="3"
         >
-          <img src="/images/archimedes.png" alt="" className="w-full h-auto" />
+          <img src={HomepageArchimedes} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Archimedes</p>
             <p className="flex-1 text-gray-400 text-sm">Web</p>
@@ -83,7 +89,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="9"
         >
-          <img src="/images/daniel.png" alt="" className="w-full h-auto" />
+          <img src={HomepageDaniel} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Daniel Ricciardo</p>
             <p className="flex-1 text-gray-400 text-sm">Web</p>
@@ -95,7 +101,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="6"
         >
-          <img src="/images/normal-nyc.png" alt="" className="w-full h-auto" />
+          <img src={HomepageNormalNYC} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Normal NYC</p>
             <p className="flex-1 text-gray-400 text-sm">Web</p>
@@ -107,7 +113,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="9"
         >
-          <img src="/images/uncurb.png" alt="" className="w-full h-auto" />
+          <img src={HomepageUncurb} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Uncurb</p>
             <p className="flex-1 text-gray-400 text-sm">Web, Mobile</p>

@@ -1,15 +1,22 @@
+import NormalMobile3 from "../../images/normal-nyc/normal-mobile-3.png";
+import NormalMobile4 from "../../images/normal-nyc/normal-mobile-4.png";
+import NormalMobile5 from "../../images/normal-nyc/normal-mobile-5.png";
+import NormalMobileReport from "../../images/semo/semo-mobile-report.png";
+import NormalMobileScore from "../../images/semo/semo-mobile-score.png";
+import NormalMobileConnect from "../../images/semo/semo-mobile-connect.png";
+
 export const Thirds1 = () => {
   return (
     <div className="w-full h-[1600px] bg-black" data-scroll-section>
       <div className="flex container mx-auto mb-40">
         <div className="w-[33%] flex justify-center mt-64">
-          <img src="/images/normal-nyc/normal-mobile-3.png" alt="" />
+          <img src={NormalMobile3} alt="" />
         </div>
         <div className="w-[33%] flex justify-center mt-64">
-          <img src="/images/normal-nyc/normal-mobile-4.png" alt="" />
+          <img src={NormalMobile4} alt="" />
         </div>
         <div className="w-[33%] flex justify-center mt-64">
-          <img src="/images/normal-nyc/normal-mobile-5.png" alt="" />
+          <img src={NormalMobile5} alt="" />
         </div>
       </div>
     </div>
@@ -32,10 +39,10 @@ export const Thirds2 = () => {
           </div>
         </div>
         <div className="w-[33%] flex justify-center ">
-          <img src="/images/semo/semo-mobile-report.png" alt="" />
+          <img src={NormalMobileReport} alt="" />
         </div>
         <div className="w-[33%] flex justify-center ">
-          <img src="/images/semo/semo-mobile-score.png" alt="" />{" "}
+          <img src={NormalMobileScore} alt="" />{" "}
         </div>
       </div>
     </div>
@@ -59,7 +66,7 @@ export const Thirds3 = () => {
         </div>
         <div className="w-[33%] flex justify-center "></div>
         <div className="w-[33%] flex justify-center ">
-          <img src="/images/semo/semo-mobile-connect.png" alt="" />{" "}
+          <img src={NormalMobileConnect} alt="" />{" "}
         </div>
       </div>
     </div>

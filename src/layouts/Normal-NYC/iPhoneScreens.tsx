@@ -1,3 +1,6 @@
+import NormalMobile1 from "../../images/normal-nyc/normal-mobile-1.png";
+import NormalMobile2 from "../../images/normal-nyc/normal-mobile-2.png";
+
 export const FloatingPhoneScreens = () => {
   return (
     <div className="w-full h-[1600px] bg-black" data-scroll-section>
@@ -7,11 +10,7 @@ export const FloatingPhoneScreens = () => {
           data-scroll
           data-scroll-speed="3"
         >
-          <img
-            src="/images/normal-nyc/normal-mobile-1.png"
-            alt=""
-            className="w-full h-auto"
-          />
+          <img src={NormalMobile1} alt="" className="w-full h-auto" />
         </div>
 
         <div
@@ -19,11 +18,7 @@ export const FloatingPhoneScreens = () => {
           data-scroll
           data-scroll-speed="9"
         >
-          <img
-            src="/images/normal-nyc/normal-mobile-2.png"
-            alt=""
-            className="w-full h-auto"
-          />
+          <img src={NormalMobile2} alt="" className="w-full h-auto" />
         </div>
       </div>
     </div>
