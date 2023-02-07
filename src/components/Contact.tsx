@@ -67,7 +67,7 @@ export const Contact = () => {
 
               <img
                 className="absolute -bottom-2 -right-2 w-auto h-28"
-                src="/images/loops.png"
+                src="../images/loops.png"
               />
             </div>
           </motion.div>

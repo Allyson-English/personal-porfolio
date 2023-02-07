@@ -1,5 +1,6 @@
 import { useMeasure } from "react-use";
 import { ListItem } from "../../components/ListItem";
+import drKeystone from "../../images/daniel-ricciardo/dr-keystone.png";
 
 export const Hero = () => {
   const [ref, { width }] = useMeasure<HTMLDivElement>();
@@ -11,11 +12,7 @@ export const Hero = () => {
       data-scroll-section
     >
       <div className="flex flex-col w-[90%] mx-auto mb-40 items-center">
-        <img
-          className="block mx-auto z-50"
-          src="/images/daniel-ricciardo/dr-keystone.png"
-          alt=""
-        />
+        <img className="block mx-auto z-50" src={drKeystone} alt="" />
         <p className="text-white font-normal absolute text-[232px] mx-auto mt-16">
           Daniel Ricciardo
         </p>

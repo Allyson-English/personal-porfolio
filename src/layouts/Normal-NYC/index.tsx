@@ -56,7 +56,7 @@ export const NormalNYC = () => {
 
         <FullWidthImage
           targetId="normal-studio-display"
-          src="public/images/normal-nyc/normal-studio-display.png"
+          src="/images/normal-nyc/normal-studio-display.png"
         />
 
         <FullWidthImage

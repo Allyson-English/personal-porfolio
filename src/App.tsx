@@ -5,6 +5,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   useLocation,
+  createHashRouter,
 } from "react-router-dom";
 import { RecoilRoot, useRecoilValue } from "recoil";
 import { locationState } from "./atoms/scroll";
@@ -15,7 +16,7 @@ import { NormalNYC } from "./layouts/Normal-NYC";
 import { Pods } from "./layouts/Pods";
 import { Semo } from "./layouts/Semo";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,

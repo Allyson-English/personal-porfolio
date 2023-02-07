@@ -8,6 +8,7 @@ import { useNavigate, useBeforeUnload } from "react-router-dom";
 import { useMouseHovered, useToggle } from "react-use";
 import { defer } from "lodash";
 import { useUpdate, useMount, useUnmount } from "react-use";
+import mainShowcase from "../../images/main-showcase-item.png";
 
 export const Showcase = () => {
   const { scroll } = useLocomotiveScroll();
@@ -185,9 +186,9 @@ export const Showcase = () => {
           }`}
           onClick={() => {
             if (slideThreeActive) {
-              navigate("/projects/dreamfield");
+              navigate("/projects/semo");
             } else if (slideTwoActive) {
-              navigate("/projects/mint-sunday");
+              navigate("/projects/pods-system");
             } else if (slideOneActive) {
               navigate("/projects/dimo");
             }
@@ -212,7 +213,7 @@ export const Showcase = () => {
               className="container mx-auto flex items-center justify-center"
             >
               <img
-                src="/images/main-showcase-item.png"
+                src={mainShowcase}
                 className="w-full h-auto sepia-0"
                 alt=""
               />
@@ -234,7 +235,7 @@ export const Showcase = () => {
               className="container mx-auto flex items-center justify-center"
             >
               <img
-                src="/images/main-showcase-item.png"
+                src={mainShowcase}
                 className="w-full h-auto sepia-[50%]"
                 alt=""
               />
@@ -255,11 +256,7 @@ export const Showcase = () => {
               ref={slideThreeRef}
               className="container mx-auto flex items-center justify-center"
             >
-              <img
-                src="/images/main-showcase-item.png"
-                className="w-full h-auto sepia"
-                alt=""
-              />
+              <img src={mainShowcase} className="w-full h-auto sepia" alt="" />
             </button>
           </motion.div>
         </Portal>

@@ -1,5 +1,6 @@
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import { Link } from "react-router-dom";
+import pods from "../../images/pods.png";
 
 export const Projects = () => {
   // const { scroll } = useLocomotiveScroll();
@@ -33,7 +34,7 @@ export const Projects = () => {
           data-scroll
           data-scroll-speed="3"
         >
-          <img src="/images/semo.png" alt="" className="w-full h-auto" />
+          <img src={pods} alt="" className="w-full h-auto" />
           <div className="flex items-center mt-4">
             <p className="text-white text-sm w-64">Semo</p>
             <p className="flex-1 text-gray-400 text-sm">Web, Mobile, System</p>

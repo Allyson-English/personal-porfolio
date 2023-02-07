@@ -49,7 +49,7 @@ export const Daniel = () => {
 
         <FullWidthImage
           targetId="dr-art-dept"
-          src="/images/daniel-ricciardo/dr-art-dept.png"
+          src="../images/daniel-ricciardo/dr-art-dept.png"
         />
 
         <FullContainerImage
