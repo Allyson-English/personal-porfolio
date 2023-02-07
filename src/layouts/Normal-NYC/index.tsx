@@ -16,6 +16,14 @@ import { MainImage } from "./MainImage";
 import { Showcase } from "./Showcase";
 import { Thirds1, Thirds2, Thirds3 } from "./Thirds";
 
+import normalFrame512826 from "../../images/normal-nyc/normal-frame-512826.png";
+import normalFrame512856 from "../../images/normal-nyc/normal-frame-512856.png";
+import normalFrame512859 from "../../images/normal-nyc/normal-frame-512859.png";
+import normalStudioDisplay from "../../images/normal-nyc/normal-studio-display.png";
+import normalScene from "../../images/normal-nyc/normal-premade-scene.png";
+import normalFrame512858 from "../../images/normal-nyc/normal-frame-512858.png";
+import normalImg7 from "../../images/normal-nyc/normal-img-7.png";
+
 export const NormalNYC = () => {
   const containerRef = useRef(null);
 
@@ -38,41 +46,35 @@ export const NormalNYC = () => {
         <PageSpace size="s" />
         <FullContainerImage
           targetId="normal-frame-512826"
-          src="/images/normal-nyc/normal-frame-512826.png"
+          src={normalFrame512826}
         />
         <PageSpace size="s" />
         <FloatingPhoneScreens />
         <FullWidthImage
           targetId="normal-frame-512856"
-          src="/images/normal-nyc/normal-frame-512856.png"
+          src={normalFrame512856}
         />
 
         <Thirds1 />
 
         <FullWidthImage
           targetId="normal-frame-512859"
-          src="/images/normal-nyc/normal-frame-512859.png"
+          src={normalFrame512859}
         />
 
         <FullWidthImage
           targetId="normal-studio-display"
-          src="/images/normal-nyc/normal-studio-display.png"
+          src={normalStudioDisplay}
         />
 
-        <FullWidthImage
-          targetId="normal-scene"
-          src="/images/normal-nyc/normal-premade-scene.png"
-        />
+        <FullWidthImage targetId="normal-scene" src={normalScene} />
 
         <FullWidthImage
           targetId="normal-frame-512858"
-          src="/images/normal-nyc/normal-frame-512858.png"
+          src={normalFrame512858}
         />
 
-        <FullWidthImage
-          targetId="normal-img-7"
-          src="/images/normal-nyc/normal-img-7.png"
-        />
+        <FullWidthImage targetId="normal-img-7" src={normalImg7} />
 
         <BoldStatement text="Lorem ipsum get the file on Figma Community. Lorem ipsum number of copies made." />
         <BottomNavigation
