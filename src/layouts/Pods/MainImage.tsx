@@ -1,3 +1,5 @@
+import PodsMain from "../../images/pods-main-image.png";
+
 export const MainImage = () => {
   return (
     <div
@@ -8,11 +10,7 @@ export const MainImage = () => {
       <div className="container mx-auto">
         <div className="w-full bg-white h-[1px] mb-24"></div>
 
-        <img
-          src="/images/pods-main-image.png"
-          className="w-full h-auto"
-          alt=""
-        />
+        <img src={PodsMain} className="w-full h-auto" alt="" />
       </div>
     </div>
   );

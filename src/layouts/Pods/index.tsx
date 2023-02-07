@@ -14,6 +14,13 @@ import { Hero } from "./Hero";
 import { MainImage } from "./MainImage";
 import { Showcase } from "./Showcase";
 
+import PodsWireFrame1 from "../../images/pods-wireframe-one.png";
+import PodsWireFrame1Underlay from "../../images/pods-wireframe-one-underlay.png";
+import PodsWireFrame2 from "../../images/pods-wireframe-two.png";
+import PodsWireFrame2Underlay from "../../images/pods-wireframe-two-underlay.png";
+import PodsOther from "../../images/pods-other.png";
+import PodsShowcase from "../../images/pods-second-showcase.png";
+
 export const Pods = () => {
   const containerRef = useRef(null);
 
@@ -38,25 +45,21 @@ export const Pods = () => {
         <PageSpace size="l" />
         <UnderlayImage
           targetId="wf-one"
-          overlaySrc="/images/pods-wireframe-one.png"
-          underlaySrc="/images/pods-wireframe-one-underlay.png"
+          overlaySrc={PodsWireFrame1}
+          underlaySrc={PodsWireFrame1Underlay}
         />
         <PageSpace size="xl" />
         <UnderlayImage
           targetId="wf-two"
-          overlaySrc="/images/pods-wireframe-two.png"
-          underlaySrc="/images/pods-wireframe-two-underlay.png"
+          overlaySrc={PodsWireFrame2}
+          underlaySrc={PodsWireFrame2Underlay}
         />
         <PageSpace size="l" />
 
-        <FullContainerImage targetId="fc-other" src="/images/pods-other.png" />
-
+        <FullContainerImage targetId="fc-other" src={PodsOther} />
         <PageSpace size="l" />
 
-        <FullWidthImage
-          targetId="sc-two"
-          src="/images/pods-second-showcase.png"
-        />
+        <FullWidthImage targetId="sc-two" src={PodsShowcase} />
 
         <PageSpace size="m" />
 
