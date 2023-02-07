@@ -1,4 +1,7 @@
-import { PageSpace } from "../../components/PageSpace";
+import drSpread6A from "../../images/daniel-ricciardo/dr-spread-6a.png";
+import drSpread6B from "../../images/daniel-ricciardo/dr-spread-6b.png";
+import drSpread7A from "../../images/daniel-ricciardo/dr-spread-7a.png";
+import drSpread7B from "../../images/daniel-ricciardo/dr-spread-7b.png";
 
 export const ScreenFloat2 = () => {
   return (
@@ -9,7 +12,7 @@ export const ScreenFloat2 = () => {
           data-scroll
           data-scroll-speed="9"
         >
-          <img src="/images/daniel-ricciardo/dr-spread-6a.png" alt="" />
+          <img src={drSpread6A} alt="" />
         </div>
 
         <div
@@ -17,7 +20,7 @@ export const ScreenFloat2 = () => {
           data-scroll
           data-scroll-speed="3"
         >
-          <img src="/images/daniel-ricciardo/dr-spread-6b.png" alt="" />
+          <img src={drSpread6B} alt="" />
         </div>
       </div>
 
@@ -47,7 +50,7 @@ export const ScreenFloat3 = () => {
           data-scroll
           data-scroll-speed="9"
         >
-          <img src="/images/daniel-ricciardo/dr-spread-7a.png" alt="" />
+          <img src={drSpread7A} alt="" />
         </div>
 
         <div
@@ -55,7 +58,7 @@ export const ScreenFloat3 = () => {
           data-scroll
           data-scroll-speed="3"
         >
-          <img src="/images/daniel-ricciardo/dr-spread-7b.png" alt="" />
+          <img src={drSpread7B} alt="" />
         </div>
       </div>
 

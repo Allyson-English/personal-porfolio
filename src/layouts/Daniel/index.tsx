@@ -16,6 +16,14 @@ import { Hero } from "./Hero";
 import { FloatingPhoneScreens } from "./iPhoneScreens";
 import { ScreenFloat } from "./ScreenFloat";
 import { ScreenFloat2, ScreenFloat3 } from "./ScreenFloat2";
+import drMain from "../../images/daniel-main.png";
+import drSpread from "../../images/daniel-ricciardo/dr-spread.png";
+import drArtDept from "../../images/daniel-ricciardo/dr-art-dept.png";
+import drSpread3 from "../../images/daniel-ricciardo/dr-spread-3.png";
+import drFrame512826 from "../../images/daniel-ricciardo/dr-frame-512826.png";
+import drMusic from "../../images/daniel-ricciardo/dr-music.png";
+import drStory from "../../images/daniel-ricciardo/dr-story-so-far.png";
+import drFinal from "../../images/daniel-ricciardo/dr-final.png";
 
 export const Daniel = () => {
   const containerRef = useRef(null);
@@ -34,7 +42,7 @@ export const Daniel = () => {
         <Header />
 
         <Hero />
-        <ReusableMainImage imageUrl="/images/daniel-main.png" />
+        <ReusableMainImage imageUrl={drMain} />
         <ReusableDescription
           main="I conducted a redesign of Daniel's site in late 2021 to bring it more in line with his streetwear-inspired personal brand."
           firstParagraph="Daniel's existing site does little to highlight his achievements as a multiple-time race winner and one of the more popular drivers on the Formula 1 grid. The current site does little to draw attention to his large merch store, highly active social and video channels, partnerships, and past accomplishments."
@@ -42,45 +50,24 @@ export const Daniel = () => {
         />
         <FloatingPhoneScreens />
 
-        <FullContainerImage
-          targetId="dr-spread"
-          src="/images/daniel-ricciardo/dr-spread.png"
-        />
+        <FullContainerImage targetId="dr-spread" src={drSpread} />
 
-        <FullWidthImage
-          targetId="dr-art-dept"
-          src="../images/daniel-ricciardo/dr-art-dept.png"
-        />
+        <FullWidthImage targetId="dr-art-dept" src={drArtDept} />
 
-        <FullContainerImage
-          targetId="dr-spread-3"
-          src="/images/daniel-ricciardo/dr-spread-3.png"
-        />
+        <FullContainerImage targetId="dr-spread-3" src={drSpread3} />
 
-        <FullWidthImage
-          targetId="dr-frame-512826"
-          src="/images/daniel-ricciardo/dr-frame-512826.png"
-        />
+        <FullWidthImage targetId="dr-frame-512826" src={drFrame512826} />
 
         <ScreenFloat />
 
-        <FullContainerImage
-          targetId="dr-music"
-          src="/images/daniel-ricciardo/dr-music.png"
-        />
+        <FullContainerImage targetId="dr-music" src={drMusic} />
 
-        <FullWidthImage
-          targetId="dr-story-so-far"
-          src="/images/daniel-ricciardo/dr-story-so-far.png"
-        />
+        <FullWidthImage targetId="dr-story-so-far" src={drStory} />
 
         <ScreenFloat2 />
         <ScreenFloat3 />
 
-        <FullWidthImage
-          targetId="dr-final"
-          src="/images/daniel-ricciardo/dr-final.png"
-        />
+        <FullWidthImage targetId="dr-final" src={drFinal} />
 
         <BottomNavigation
           previousProject="DIMO Mobile"

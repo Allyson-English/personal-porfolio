@@ -1,3 +1,6 @@
+import drSpread5A from "../../images/daniel-ricciardo/dr-spread-5a.png";
+import drSpread5B from "../../images/daniel-ricciardo/dr-spread-5b.png";
+
 export const ScreenFloat = () => {
   return (
     <div className="w-full h-[1600px] bg-black" data-scroll-section>
@@ -7,7 +10,7 @@ export const ScreenFloat = () => {
           data-scroll
           data-scroll-speed="3"
         >
-          <img src="/images/daniel-ricciardo/dr-spread-5a.png" alt="" />
+          <img src={drSpread5A} alt="" />
         </div>
 
         <div
@@ -15,7 +18,7 @@ export const ScreenFloat = () => {
           data-scroll
           data-scroll-speed="9"
         >
-          <img src="/images/daniel-ricciardo/dr-spread-5b.png" alt="" />
+          <img src={drSpread5B} alt="" />
         </div>
       </div>
     </div>
