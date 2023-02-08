@@ -11,7 +11,7 @@ export const Hero = () => {
       className="h-[calc(100vh-6rem)] w-full bg-black flex flex-col justify-end"
       data-scroll-section
     >
-      <div className="flex flex-col w-[90%] mx-auto mb-40 items-center">
+      <div className="flex flex-col w-[90%] mx-auto mb-64 items-center">
         <img className="block mx-auto z-50" src={PodsKeystone} alt="" />
         <p className="text-white font-normal absolute text-[232px] mx-auto mt-16">
           Pods System

@@ -20,7 +20,7 @@ export const Description = () => {
 
       <div className="w-full pr-96 text-white">
         <div className="grid grid-cols-2 gap-24 w-full">
-          <div className="p">
+          <div className="text-xl">
             Dora, Daniel and I set up a period of weekly syncs to build the
             design system in parallel with the scoping and architecting of our
             upcoming mobile app. We began by compiling a series of reference
@@ -28,7 +28,7 @@ export const Description = () => {
             more. Eventually we settled on Base as a core reference point for
             its robust components and east-to-navigate file setup.
           </div>
-          <div className="p">
+          <div className="text-xl">
             We compiled examples and references for our existing components as
             well as ones we projected a use for in the app. From there we
             divided and conquered throughout the week, then did weekly peer
