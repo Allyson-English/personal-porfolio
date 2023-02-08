@@ -25,8 +25,8 @@ export const ReusableDescription = ({
 
       <div className="w-full pr-96 text-white">
         <div className="grid grid-cols-2 gap-24 w-full">
-          <div className="p">{firstParagraph}</div>
-          <div className="p">{secondParagraph}</div>
+          <div className="text-2xl">{firstParagraph}</div>
+          <div className="text-2xl">{secondParagraph}</div>
         </div>
       </div>
     </div>
