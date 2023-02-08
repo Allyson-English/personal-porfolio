@@ -18,12 +18,12 @@ export const Description = () => {
 
       <div className="w-full pr-96 text-white">
         <div className="grid grid-cols-2 gap-24 w-full">
-          <div className="p">
+          <div className="text-xl">
             Normal was seeking an “art gallery” style of visual direction in
             which the site’s branding and colors wouldn’t clash with or dominate
             the photo or interview content.
           </div>
-          <div className="p">
+          <div className="text-xl">
             We decided to use a very neutral palette to create a calm and
             sophisticated look for the blog along with a basic text-based
             wordmark. Our goal was to remain calm, inviting, and sophisticated
