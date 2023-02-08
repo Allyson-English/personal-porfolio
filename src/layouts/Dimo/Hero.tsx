@@ -46,8 +46,8 @@ export const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="h-48 w-48 border border-white rounded-full flex items-center justify-center">
-          <p className="text-white">Live project</p>
+        <div className="h-48 w-48 border border-white rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black">
+          <p className="">Live project</p>
         </div>
       </div>
     </div>
