@@ -189,9 +189,9 @@ export const Showcase = () => {
           }`}
           onClick={() => {
             if (slideThreeActive) {
-              navigate("/projects/semo");
-            } else if (slideTwoActive) {
               navigate("/projects/pods-system");
+            } else if (slideTwoActive) {
+              navigate("/projects/daniel-ricciardo");
             } else if (slideOneActive) {
               navigate("/projects/dimo");
             }
