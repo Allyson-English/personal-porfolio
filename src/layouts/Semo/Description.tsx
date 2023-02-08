@@ -18,7 +18,7 @@ export const Description = () => {
 
       <div className="w-full pr-96 text-white">
         <div className="grid grid-cols-2 gap-24 w-full">
-          <div className="p">
+          <div className="text-xl">
             Semo’s core competency was its <b>Semo Score</b>, a proprietary way
             of quantifying a user’s insurance risk profile similar to a credit
             score. Users connected their coverage and provided information to
@@ -26,7 +26,7 @@ export const Description = () => {
             the score to enable to user to shop for better rates or enter into a
             deductible sharing pool.
           </div>
-          <div className="p">
+          <div className="text-xl">
             The team’s brand goals were to convey “your friend in insurance” as
             its messaging and feel. Semo was using orange as its primary color -
             we changed to a blue and changed the logo from an all-caps wordmark

@@ -1,4 +1,5 @@
 import { useMeasure } from "react-use";
+import DimoKeystone from "../../images/dimo/dimo-keystone.png";
 
 interface ListItemProps {
   label: string;
@@ -18,15 +19,18 @@ export const Hero = () => {
   return (
     <div
       ref={ref}
-      className="container mx-auto h-[calc(100vh-6rem)] flex flex-col"
+      className="h-[calc(100vh-6rem)] w-full bg-black flex flex-col justify-end"
       data-scroll-section
     >
-      <div className="flex-1 flex items-center justify-center relative">
-        <h1 className="text-white" style={{ fontSize: Math.round(width / 7) }}>
+      <div className="flex flex-col w-[90%] mx-auto mb-56 items-center">
+        <img className="block mx-auto z-50" src={DimoKeystone} alt="" />
+        {/* <h1 className="text-white" style={{ fontSize: Math.round(width / 7) }}> */}
+        <p className="text-white font-normal absolute text-[232px] mx-auto mt-16">
           DIMO Mobile
-        </h1>
+        </p>
+        {/* </h1> */}
       </div>
-      <div className="h-72 flex">
+      <div className="h-72 flex container mx-auto">
         <div className="w-80 space-y-4">
           <ListItem label="Client" value="DIMO" />
           <ListItem label="Type" value="Mobile App, Brand" />
