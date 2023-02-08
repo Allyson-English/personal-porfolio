@@ -9,6 +9,9 @@ import { useMouseHovered, useToggle } from "react-use";
 import { defer } from "lodash";
 import { useUpdate, useMount, useUnmount } from "react-use";
 import mainShowcase from "../../images/main-showcase-item.png";
+import DimoHero from "../../images/dimo/dimo-hero.png";
+import DRHero from "../../images/daniel-ricciardo/dr-final.png";
+import PodsHero from "../../images/pods-system/pods-hero.png";
 
 export const Showcase = () => {
   const { scroll } = useLocomotiveScroll();
@@ -212,11 +215,7 @@ export const Showcase = () => {
               ref={slideOneRef}
               className="container mx-auto flex items-center justify-center"
             >
-              <img
-                src={mainShowcase}
-                className="w-full h-auto sepia-0"
-                alt=""
-              />
+              <img src={DimoHero} className="w-full h-auto sepia-0" alt="" />
             </button>
           </motion.div>
 
@@ -234,11 +233,7 @@ export const Showcase = () => {
               ref={slideTwoRef}
               className="container mx-auto flex items-center justify-center"
             >
-              <img
-                src={mainShowcase}
-                className="w-full h-auto sepia-[50%]"
-                alt=""
-              />
+              <img src={DRHero} className="w-full h-auto rounded-3xl" alt="" />
             </button>
           </motion.div>
 
@@ -256,7 +251,11 @@ export const Showcase = () => {
               ref={slideThreeRef}
               className="container mx-auto flex items-center justify-center"
             >
-              <img src={mainShowcase} className="w-full h-auto sepia" alt="" />
+              <img
+                src={PodsHero}
+                className="w-full h-auto rounded-3xl"
+                alt=""
+              />
             </button>
           </motion.div>
         </Portal>

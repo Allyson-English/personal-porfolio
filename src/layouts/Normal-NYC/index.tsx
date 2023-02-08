@@ -78,10 +78,10 @@ export const NormalNYC = () => {
 
         <BoldStatement text="Lorem ipsum get the file on Figma Community. Lorem ipsum number of copies made." />
         <BottomNavigation
-          previousProject="DIMO Mobile"
-          previousProjectURL="/projects/dimo"
-          nextProject="Daniel Ricciardo"
-          nextProjectURL="/projects/daniel-ricciardo"
+          previousProject="Semo"
+          previousProjectURL="/projects/semo"
+          nextProject="DIMO Mobile"
+          nextProjectURL="/projects/dimo"
         />
 
         <CallToAction />
