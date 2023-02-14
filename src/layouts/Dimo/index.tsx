@@ -23,6 +23,7 @@ import {
   LeftFloatPhoneWithDescription,
   RightFloatPhoneWithDescription,
 } from "./PhoneFloatWithDescription";
+import { CoreHome } from "./PhoneCharge";
 
 export const Dimo = () => {
   const containerRef = useRef(null);
@@ -45,7 +46,7 @@ export const Dimo = () => {
         <Description />
         <FullWidthImage targetId="phones-color" src={PhonesColor} />
         <FullWidthImage targetId="dimo-scene" src={DimoScene} />
-        <PhoneStates />
+        <CoreHome />
         <FullContainerImage
           targetId="dimo-frame-512839"
           src={DimoFrame512839}
