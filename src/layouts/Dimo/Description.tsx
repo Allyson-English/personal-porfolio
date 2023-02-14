@@ -1,6 +1,6 @@
 export const Description = () => {
   return (
-    <div className="w-full h-[1600px] bg-black relative" data-scroll-section>
+    <div className="w-full h-[750px] bg-black relative" data-scroll-section>
       <div className="container mx-auto">
         <div className="w-full max-w-3xl">
           <div className="float-left h-8 w-32 flex items-center">

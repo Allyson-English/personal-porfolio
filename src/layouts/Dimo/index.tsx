@@ -43,7 +43,6 @@ export const Dimo = () => {
         <Hero />
         <MainImage />
         <Description />
-        <PageSpace size="s" />
         <FullWidthImage targetId="phones-color" src={PhonesColor} />
         <FullWidthImage targetId="dimo-scene" src={DimoScene} />
         <PhoneStates />

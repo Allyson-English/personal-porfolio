@@ -12,8 +12,8 @@ export const FullWidthImage = ({ targetId, src }: FullWidthImageProps) => {
   const { scroll } = useLocomotiveScroll();
   const scrollValue = useMotionValue(0);
 
-  const topY = useTransform(scrollValue, [0.3, 1], ["0rem", "-6rem"]);
-  const bottomY = useTransform(scrollValue, [0.3, 1], ["6rem", "0rem"]);
+  const topY = useTransform(scrollValue, [0.3, 1], ["0rem", "-8rem"]);
+  const bottomY = useTransform(scrollValue, [0.3, 1], ["8rem", "0rem"]);
 
   useEffect(() => {
     if (!scroll) return;
