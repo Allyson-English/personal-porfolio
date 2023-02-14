@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-porfolio/static/css/main.eef52125.css",
-    "main.js": "/personal-porfolio/static/js/main.a54f9353.js",
+    "main.css": "/personal-porfolio/static/css/main.51063b53.css",
+    "main.js": "/personal-porfolio/static/js/main.c1a96968.js",
     "static/js/787.5b3f80df.chunk.js": "/personal-porfolio/static/js/787.5b3f80df.chunk.js",
     "static/media/daniel-main.png": "/personal-porfolio/static/media/daniel-main.f18b7a9f09e0918653d1.png",
     "static/media/fleet-mockup.png": "/personal-porfolio/static/media/fleet-mockup.e0daff1b6b5afb3175ce.png",
@@ -68,8 +68,10 @@
     "static/media/iphone-14-pro5.png": "/personal-porfolio/static/media/iphone-14-pro5.dd0c07a57b1dab6a03a7.png",
     "static/media/semo-group-512793.png": "/personal-porfolio/static/media/semo-group-512793.2a72be15e558c6585bca.png",
     "static/media/semo-mobile-score.png": "/personal-porfolio/static/media/semo-mobile-score.e2b7d41a4e219d3dd85b.png",
-    "static/media/iphone-14-pro.png": "/personal-porfolio/static/media/iphone-14-pro.0e7e10c1047c239ea94e.png",
+    "static/media/iPhoneHealthy.png": "/personal-porfolio/static/media/iPhoneHealthy.0e7e10c1047c239ea94e.png",
     "static/media/semo-mobile-report.png": "/personal-porfolio/static/media/semo-mobile-report.267a0ab6b5b400033174.png",
+    "static/media/iPhoneWarning.png": "/personal-porfolio/static/media/iPhoneWarning.4aea57374fc7f1699ae3.png",
+    "static/media/iPhoneDanger.png": "/personal-porfolio/static/media/iPhoneDanger.c8a38b69392f951ed7b1.png",
     "static/media/semo-frame-512826.png": "/personal-porfolio/static/media/semo-frame-512826.68aec13c323873413087.png",
     "static/media/iphone-14-pro2.png": "/personal-porfolio/static/media/iphone-14-pro2.3cccb8a04ea5820c5af8.png",
     "static/media/semo-mobile-connect.png": "/personal-porfolio/static/media/semo-mobile-connect.32bdc51340eb9d61d66b.png",
@@ -77,12 +79,12 @@
     "static/media/normal-frame-512826.png": "/personal-porfolio/static/media/normal-frame-512826.569506fed2b07159c6be.png",
     "static/media/normal-mobile-4.png": "/personal-porfolio/static/media/normal-mobile-4.0ba23801f7660f7c5c77.png",
     "index.html": "/personal-porfolio/index.html",
-    "main.eef52125.css.map": "/personal-porfolio/static/css/main.eef52125.css.map",
-    "main.a54f9353.js.map": "/personal-porfolio/static/js/main.a54f9353.js.map",
+    "main.51063b53.css.map": "/personal-porfolio/static/css/main.51063b53.css.map",
+    "main.c1a96968.js.map": "/personal-porfolio/static/js/main.c1a96968.js.map",
     "787.5b3f80df.chunk.js.map": "/personal-porfolio/static/js/787.5b3f80df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eef52125.css",
-    "static/js/main.a54f9353.js"
+    "static/css/main.51063b53.css",
+    "static/js/main.c1a96968.js"
   ]
 }
