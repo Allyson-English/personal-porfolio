@@ -26,21 +26,25 @@ export const PhoneUnderlay = () => {
   useMount(() => setTimestamp(`${Date.now()}`));
   useUnmount(() => setTimestamp(undefined));
 
-  const imageScale = useTransform(scrollValue, [0, 1], [1, 1]);
+  const imageScale = useTransform(
+    scrollValue,
+    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    [0.2, 0.4, 0.6, 0.8, 1, 1, 1, 1, 1, 1, 1]
+  );
   const imageOpacity = useTransform(
     scrollValue,
-    [0, 0.2, 0.4, 0.6, 0.8, 1],
-    [1, 1, 1, 0, 0, 0]
+    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    [0.1, 0.4, 0.8, 1, 1, 1, 0, 0, 0, 0, 0]
   );
   const bgImageOpacity = useTransform(
     scrollValue,
-    [0, 0.2, 0.4, 0.6, 0.8, 1],
-    [0, 0, 1, 1, 0, 0]
+    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    [0, 0.1, 0.4, 0.8, 1, 1, 1, 0, 0, 0, 0]
   );
   const bg1ImageOpacity = useTransform(
     scrollValue,
-    [0, 0.2, 0.4, 0.6, 0.8, 1],
-    [0, 0, 0, 0, 1, 1]
+    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    [0, 0.1, 0.4, 0.8, 1, 1, 1, 1, 1, 0.6, 0.2]
   );
 
   const targetId = "temp";
@@ -64,7 +68,6 @@ export const PhoneUnderlay = () => {
     scroll.on("scroll", (args: OnScrollEvent) => {
       if (typeof args.currentElements[`${targetId}-scroll`] === "object") {
         let progress = args.currentElements[`${targetId}-scroll`].progress;
-        // console.log("wtf, here?", progress);
         scrollValue.set(progress);
       }
     });
@@ -73,7 +76,7 @@ export const PhoneUnderlay = () => {
   return (
     <div
       id={targetId}
-      className="h-[2800px] w-full pt-24"
+      className="h-[3200px] w-full pt-24"
       data-scroll-section
       data-scroll
       data-scroll-id={`${targetId}-scroll`}
@@ -88,7 +91,7 @@ export const PhoneUnderlay = () => {
                 className="fixed z-30 top-[20%] left-[10%] right-[50%] pointer-events-none"
                 style={{
                   y: slideFourTextBox,
-                  scale: textBoxScale,
+                  scale: imageScale,
                   opacity: slidesOpacity,
                 }}
                 data-scroll
@@ -123,21 +126,33 @@ export const PhoneUnderlay = () => {
               src={DangerPhone}
               alt=""
               className="absolute top-0 left-0 w-full h-auto -z-10"
-              style={{ opacity: bg1ImageOpacity }}
+              style={{
+                y: slideFourTextBox,
+                scale: imageScale,
+                opacity: bg1ImageOpacity,
+              }}
             />
 
             <motion.img
               src={WarningPhone}
               alt=""
               className="absolute top-0 left-0 w-full h-auto -z-10"
-              style={{ opacity: bgImageOpacity }}
+              style={{
+                y: slideFourTextBox,
+                scale: imageScale,
+                opacity: bgImageOpacity,
+              }}
             />
 
             <motion.img
               src={HealthyPhone}
               alt=""
               className="w-full h-auto"
-              style={{ scale: imageScale, opacity: imageOpacity }}
+              style={{
+                y: slideFourTextBox,
+                scale: imageScale,
+                opacity: imageOpacity,
+              }}
             />
           </div>
         </div>
