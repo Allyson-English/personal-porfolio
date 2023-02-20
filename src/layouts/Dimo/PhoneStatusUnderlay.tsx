@@ -31,20 +31,29 @@ export const PhoneUnderlay = () => {
     [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
     [0.2, 0.4, 0.6, 0.8, 1, 1, 1, 1, 1, 1, 1]
   );
-  const imageOpacity = useTransform(
+  const imageOpacityHealthy = useTransform(
     scrollValue,
-    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-    [0.1, 0.4, 0.8, 1, 1, 1, 0, 0, 0, 0, 0]
+    [
+      0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65,
+      0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1,
+    ],
+    [0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   );
-  const bgImageOpacity = useTransform(
+  const imageOpacityWarning = useTransform(
     scrollValue,
-    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-    [0, 0.1, 0.4, 0.8, 1, 1, 1, 0, 0, 0, 0]
+    [
+      0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65,
+      0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1,
+    ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
   );
-  const bg1ImageOpacity = useTransform(
+  const imageOpacityDanger = useTransform(
     scrollValue,
-    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-    [0, 0.1, 0.4, 0.8, 1, 1, 1, 1, 1, 0.6, 0.2]
+    [
+      0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65,
+      0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1,
+    ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
   );
 
   const targetId = "temp";
@@ -84,7 +93,7 @@ export const PhoneUnderlay = () => {
     >
       <div className="flex container mx-auto">
         {" "}
-        <div className="w-[50%]">
+        <div className="w-[40%]">
           {timestamp && (
             <Portal key={timestamp}>
               <motion.div
@@ -129,7 +138,7 @@ export const PhoneUnderlay = () => {
               style={{
                 y: slideFourTextBox,
                 scale: imageScale,
-                opacity: bg1ImageOpacity,
+                opacity: imageOpacityDanger,
               }}
             />
 
@@ -140,7 +149,7 @@ export const PhoneUnderlay = () => {
               style={{
                 y: slideFourTextBox,
                 scale: imageScale,
-                opacity: bgImageOpacity,
+                opacity: imageOpacityWarning,
               }}
             />
 
@@ -151,10 +160,78 @@ export const PhoneUnderlay = () => {
               style={{
                 y: slideFourTextBox,
                 scale: imageScale,
-                opacity: imageOpacity,
+                opacity: imageOpacityHealthy,
               }}
             />
           </div>
+        </div>
+        <div className="w-[10%]">
+          {timestamp && (
+            <Portal key={timestamp}>
+              <motion.div
+                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                style={{
+                  y: slideFourTextBox,
+                  scale: imageScale,
+                  opacity: imageOpacityDanger,
+                }}
+              >
+                <div className="w-full max-w-2xl">
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Healthy
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Warning
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    <b>Danger</b>
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                style={{
+                  y: slideFourTextBox,
+                  scale: imageScale,
+                  opacity: imageOpacityWarning,
+                }}
+              >
+                <div className="w-full max-w-2xl">
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Healthy
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    <b>Warning</b>
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Danger
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                style={{
+                  y: slideFourTextBox,
+                  scale: imageScale,
+                  opacity: imageOpacityHealthy,
+                }}
+              >
+                <div className="w-full max-w-2xl">
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    <b>Healthy</b>
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Warning
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Danger
+                  </p>
+                </div>
+              </motion.div>
+            </Portal>
+          )}
         </div>
       </div>
     </div>
