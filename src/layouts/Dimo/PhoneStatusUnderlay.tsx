@@ -56,7 +56,7 @@ export const PhoneUnderlay = () => {
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
   );
 
-  const targetId = "temp";
+  const targetId = "phoneUnderlay";
 
   const slideFourTextBox = useTransform(
     scrollValue,

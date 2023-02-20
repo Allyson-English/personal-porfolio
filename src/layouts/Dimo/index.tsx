@@ -23,7 +23,7 @@ import {
   LeftFloatPhoneWithDescription,
   RightFloatPhoneWithDescription,
 } from "./PhoneFloatWithDescription";
-import { CoreHome } from "./PhoneCharge";
+import { VehicleIntelligence } from "./VehicleIntelligence";
 import { PhoneUnderlay } from "./PhoneStatusUnderlay";
 
 export const Dimo = () => {
@@ -40,21 +40,19 @@ export const Dimo = () => {
     >
       <main className="bg-black" data-scroll-container ref={containerRef}>
         {/* HEADER */}
+        {/* <VehicleIntelligence /> */}
         <Header />
-
         <Hero />
         <MainImage />
         <Description />
         <FullWidthImage targetId="phones-color" src={PhonesColor} />
         <FullWidthImage targetId="dimo-scene" src={DimoScene} />
         <PhoneUnderlay />
-        <CoreHome />
         <FullContainerImage
           targetId="dimo-frame-512839"
           src={DimoFrame512839}
         />
-
-        <LeftFloatPhoneWithDescription />
+        <VehicleIntelligence />
         <FullWidthImage targetId="dimo-fleet-mockup2" src={FleetMockup2} />
         <RightFloatPhoneWithDescription />
 
