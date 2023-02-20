@@ -25,6 +25,7 @@ import {
 } from "./PhoneFloatWithDescription";
 import { VehicleIntelligence } from "./VehicleIntelligence";
 import { PhoneUnderlay } from "./PhoneStatusUnderlay";
+import { VehicleAsNFTs } from "./VehicleAsNFTs";
 
 export const Dimo = () => {
   const containerRef = useRef(null);
@@ -54,7 +55,7 @@ export const Dimo = () => {
         />
         <VehicleIntelligence />
         <FullWidthImage targetId="dimo-fleet-mockup2" src={FleetMockup2} />
-        <RightFloatPhoneWithDescription />
+        <VehicleAsNFTs />
 
         <ScreenFloat />
         <FullWidthImage src={FleetMockup3} targetId="fleet-mockup" />
