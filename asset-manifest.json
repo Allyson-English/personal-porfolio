@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-porfolio/static/css/main.435fe9be.css",
-    "main.js": "/personal-porfolio/static/js/main.0dbf0a01.js",
+    "main.js": "/personal-porfolio/static/js/main.3c20fc88.js",
     "static/js/787.5b3f80df.chunk.js": "/personal-porfolio/static/js/787.5b3f80df.chunk.js",
     "static/media/daniel-main.png": "/personal-porfolio/static/media/daniel-main.f18b7a9f09e0918653d1.png",
     "static/media/fleet-mockup.png": "/personal-porfolio/static/media/fleet-mockup.e0daff1b6b5afb3175ce.png",
@@ -64,8 +64,9 @@
     "static/media/pods-wireframe-two-underlay.png": "/personal-porfolio/static/media/pods-wireframe-two-underlay.f1f590c0243e115b2037.png",
     "static/media/pods-wireframe-one.png": "/personal-porfolio/static/media/pods-wireframe-one.de41aec237c47be02142.png",
     "static/media/pods-keystone.png": "/personal-porfolio/static/media/pods-keystone.4d4377dece2ebbebbe5c.png",
-    "static/media/iphone-14-pro3.png": "/personal-porfolio/static/media/iphone-14-pro3.4c7116bd0cd801a1a2b4.png",
+    "static/media/iPhone14CustomizeNFT.png": "/personal-porfolio/static/media/iPhone14CustomizeNFT.b7ef2158401b2af414e1.png",
     "static/media/iphone-14-pro5.png": "/personal-porfolio/static/media/iphone-14-pro5.dd0c07a57b1dab6a03a7.png",
+    "static/media/iPhone14Minted.png": "/personal-porfolio/static/media/iPhone14Minted.c5bc02739410624e092d.png",
     "static/media/semo-group-512793.png": "/personal-porfolio/static/media/semo-group-512793.2a72be15e558c6585bca.png",
     "static/media/semo-mobile-score.png": "/personal-porfolio/static/media/semo-mobile-score.e2b7d41a4e219d3dd85b.png",
     "static/media/iPhoneHealthy.png": "/personal-porfolio/static/media/iPhoneHealthy.0e7e10c1047c239ea94e.png",
@@ -74,7 +75,6 @@
     "static/media/iPhoneDanger.png": "/personal-porfolio/static/media/iPhoneDanger.c8a38b69392f951ed7b1.png",
     "static/media/iPhone14TirePressure.png": "/personal-porfolio/static/media/iPhone14TirePressure.1788386c46edc5b4e1a0.png",
     "static/media/semo-frame-512826.png": "/personal-porfolio/static/media/semo-frame-512826.68aec13c323873413087.png",
-    "static/media/iphone-14-pro2.png": "/personal-porfolio/static/media/iphone-14-pro2.3cccb8a04ea5820c5af8.png",
     "static/media/iPhone14Range.png": "/personal-porfolio/static/media/iPhone14Range.94129a90d3ff419814fa.png",
     "static/media/semo-mobile-connect.png": "/personal-porfolio/static/media/semo-mobile-connect.32bdc51340eb9d61d66b.png",
     "static/media/dr-frame-512826.png": "/personal-porfolio/static/media/dr-frame-512826.c473c042570eb2fc4a4e.png",
@@ -85,11 +85,11 @@
     "static/media/normal-mobile-4.png": "/personal-porfolio/static/media/normal-mobile-4.0ba23801f7660f7c5c77.png",
     "index.html": "/personal-porfolio/index.html",
     "main.435fe9be.css.map": "/personal-porfolio/static/css/main.435fe9be.css.map",
-    "main.0dbf0a01.js.map": "/personal-porfolio/static/js/main.0dbf0a01.js.map",
+    "main.3c20fc88.js.map": "/personal-porfolio/static/js/main.3c20fc88.js.map",
     "787.5b3f80df.chunk.js.map": "/personal-porfolio/static/js/787.5b3f80df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.435fe9be.css",
-    "static/js/main.0dbf0a01.js"
+    "static/js/main.3c20fc88.js"
   ]
 }
