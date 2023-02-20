@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-porfolio/static/css/main.6c60360a.css",
-    "main.js": "/personal-porfolio/static/js/main.85be7775.js",
+    "main.css": "/personal-porfolio/static/css/main.435fe9be.css",
+    "main.js": "/personal-porfolio/static/js/main.dfde06df.js",
     "static/js/787.5b3f80df.chunk.js": "/personal-porfolio/static/js/787.5b3f80df.chunk.js",
     "static/media/daniel-main.png": "/personal-porfolio/static/media/daniel-main.f18b7a9f09e0918653d1.png",
     "static/media/fleet-mockup.png": "/personal-porfolio/static/media/fleet-mockup.e0daff1b6b5afb3175ce.png",
@@ -72,19 +72,24 @@
     "static/media/semo-mobile-report.png": "/personal-porfolio/static/media/semo-mobile-report.267a0ab6b5b400033174.png",
     "static/media/iPhoneWarning.png": "/personal-porfolio/static/media/iPhoneWarning.4aea57374fc7f1699ae3.png",
     "static/media/iPhoneDanger.png": "/personal-porfolio/static/media/iPhoneDanger.c8a38b69392f951ed7b1.png",
+    "static/media/iPhone14TirePressure.png": "/personal-porfolio/static/media/iPhone14TirePressure.1788386c46edc5b4e1a0.png",
     "static/media/semo-frame-512826.png": "/personal-porfolio/static/media/semo-frame-512826.68aec13c323873413087.png",
     "static/media/iphone-14-pro2.png": "/personal-porfolio/static/media/iphone-14-pro2.3cccb8a04ea5820c5af8.png",
+    "static/media/iPhone14Range.png": "/personal-porfolio/static/media/iPhone14Range.94129a90d3ff419814fa.png",
     "static/media/semo-mobile-connect.png": "/personal-porfolio/static/media/semo-mobile-connect.32bdc51340eb9d61d66b.png",
     "static/media/dr-frame-512826.png": "/personal-porfolio/static/media/dr-frame-512826.c473c042570eb2fc4a4e.png",
+    "static/media/iPhone14MarketplaceValue.png": "/personal-porfolio/static/media/iPhone14MarketplaceValue.0a45c4f87adb47cf27b9.png",
     "static/media/normal-frame-512826.png": "/personal-porfolio/static/media/normal-frame-512826.569506fed2b07159c6be.png",
+    "static/media/iPhone14Habits.png": "/personal-porfolio/static/media/iPhone14Habits.4e0442ffa55a28e6bf40.png",
+    "static/media/iPhone14ConnectedMiles.png": "/personal-porfolio/static/media/iPhone14ConnectedMiles.1eb3cbcd2a64f1c08774.png",
     "static/media/normal-mobile-4.png": "/personal-porfolio/static/media/normal-mobile-4.0ba23801f7660f7c5c77.png",
     "index.html": "/personal-porfolio/index.html",
-    "main.6c60360a.css.map": "/personal-porfolio/static/css/main.6c60360a.css.map",
-    "main.85be7775.js.map": "/personal-porfolio/static/js/main.85be7775.js.map",
+    "main.435fe9be.css.map": "/personal-porfolio/static/css/main.435fe9be.css.map",
+    "main.dfde06df.js.map": "/personal-porfolio/static/js/main.dfde06df.js.map",
     "787.5b3f80df.chunk.js.map": "/personal-porfolio/static/js/787.5b3f80df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c60360a.css",
-    "static/js/main.85be7775.js"
+    "static/css/main.435fe9be.css",
+    "static/js/main.dfde06df.js"
   ]
 }
