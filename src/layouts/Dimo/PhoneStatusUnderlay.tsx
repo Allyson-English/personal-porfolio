@@ -85,7 +85,7 @@ export const PhoneUnderlay = () => {
   return (
     <div
       id={targetId}
-      className="h-[3200px] w-full pt-24"
+      className="h-[2800px] w-full"
       data-scroll-section
       data-scroll
       data-scroll-id={`${targetId}-scroll`}
