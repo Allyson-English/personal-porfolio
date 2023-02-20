@@ -134,6 +134,47 @@ export const VehicleAsNFTs = () => {
             />
           </div>
         </div>
+        <div className="w-[10%]">
+          {timestamp && (
+            <Portal key={timestamp}>
+              <motion.div
+                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                style={{
+                  y: slideFourTextBox,
+                  scale: imageScale,
+                  opacity: bg1ImageOpacity,
+                }}
+              >
+                <div className="w-full max-w-2xl">
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Cutomize
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    <b>Minted</b>
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                style={{
+                  y: slideFourTextBox,
+                  scale: imageScale,
+                  opacity: imageOpacity,
+                }}
+              >
+                <div className="w-full max-w-2xl">
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    <b>Customize</b>
+                  </p>
+                  <p className="text-2xl text-white pt-5 leading-snug">
+                    Minted
+                  </p>
+                </div>
+              </motion.div>
+            </Portal>
+          )}
+        </div>
       </div>
     </div>
   );

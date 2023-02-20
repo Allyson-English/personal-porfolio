@@ -41,7 +41,6 @@ export const Dimo = () => {
     >
       <main className="bg-black" data-scroll-container ref={containerRef}>
         {/* HEADER */}
-        {/* <VehicleIntelligence /> */}
         <Header />
         <Hero />
         <MainImage />
