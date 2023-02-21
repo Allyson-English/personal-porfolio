@@ -28,48 +28,48 @@ export const PhoneUnderlay = () => {
 
   const imageScale = useTransform(
     scrollValue,
-    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-    [0.2, 0.4, 0.6, 0.8, 1, 1, 1, 1, 1, 1, 1]
+    [0, 0.15, 0.2, 0.4, 0.6, 0.8, 1],
+    [0.5, 1, 1, 1, 1, 1, 1]
   );
   const imageOpacityHealthy = useTransform(
     scrollValue,
-    [
-      0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65,
-      0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1,
-    ],
-    [0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0.2, 0.4, 0.6, 0.8, 1],
+    [1, 1, 1, 0, 0, 0]
   );
   const imageOpacityWarning = useTransform(
     scrollValue,
-    [
-      0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65,
-      0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1,
-    ],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+    [0, 0.2, 0.4, 0.6, 0.8, 1],
+    [0, 0, 0, 1, 0, 0]
   );
   const imageOpacityDanger = useTransform(
     scrollValue,
-    [
-      0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65,
-      0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1,
-    ],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+    [0, 0.2, 0.4, 0.6, 0.8, 1],
+    [0, 0, 0, 0, 1, 1]
   );
 
   const targetId = "phoneUnderlay";
 
   const slideFourTextBox = useTransform(
     scrollValue,
-    [0.1, 0.3, 0.9, 1],
-    ["100vh", "0vh", "0vh", "-100vh"],
+    [0, 0.2, 0.4, 0.6, 0.8, 1],
+    ["100vh", "0vh", "0vh", "0vh", "0vh", "-100vh"],
     {
       clamp: true,
     }
   );
-  const textBoxScale = useTransform(scrollValue, [0.3, 0.35], [1, 0.9], {
-    clamp: true,
-  });
-  const slidesOpacity = useTransform(scrollValue, [0.9, 1], [1, 0]);
+  const textBoxScale = useTransform(
+    scrollValue,
+    [0, 0.2, 0.4, 0.6, 0.8, 1],
+    [1, 1, 1, 1, 1, 0.5],
+    {
+      clamp: true,
+    }
+  );
+  const slidesOpacity = useTransform(
+    scrollValue,
+    [0, 0.2, 0.4, 0.6, 0.8, 1],
+    [1, 1, 1, 1, 1, 0.5]
+  );
 
   useEffect(() => {
     if (!scroll) return;
@@ -85,7 +85,7 @@ export const PhoneUnderlay = () => {
   return (
     <div
       id={targetId}
-      className="h-[2800px] w-full"
+      className="h-[2800px] w-full pt-56"
       data-scroll-section
       data-scroll
       data-scroll-id={`${targetId}-scroll`}
@@ -97,7 +97,7 @@ export const PhoneUnderlay = () => {
           {timestamp && (
             <Portal key={timestamp}>
               <motion.div
-                className="fixed z-30 top-[20%] left-[10%] right-[50%] pointer-events-none"
+                className="fixed z-30 top-[30%] left-[10%] right-[50%] pointer-events-none"
                 style={{
                   y: slideFourTextBox,
                   scale: imageScale,
@@ -169,7 +169,7 @@ export const PhoneUnderlay = () => {
           {timestamp && (
             <Portal key={timestamp}>
               <motion.div
-                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                className="fixed z-30 top-[30%] left-[80%] right-[50%] pointer-events-none"
                 style={{
                   y: slideFourTextBox,
                   scale: imageScale,
@@ -183,14 +183,20 @@ export const PhoneUnderlay = () => {
                   <p className="text-2xl text-white pt-5 leading-snug">
                     Warning
                   </p>
-                  <p className="text-2xl text-white pt-5 leading-snug">
-                    <b>Danger</b>
+                  <p className="text-2xl text-white pt-5 leading-snug inline-block">
+                    <span className="inline-block">
+                      <ul className="list-disc">
+                        <li>
+                          <b>Danger</b>
+                        </li>
+                      </ul>
+                    </span>
                   </p>
                 </div>
               </motion.div>
 
               <motion.div
-                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                className="fixed z-30 top-[30%] left-[80%] right-[50%] pointer-events-none"
                 style={{
                   y: slideFourTextBox,
                   scale: imageScale,
@@ -202,7 +208,13 @@ export const PhoneUnderlay = () => {
                     Healthy
                   </p>
                   <p className="text-2xl text-white pt-5 leading-snug">
-                    <b>Warning</b>
+                    <span className="inline-block">
+                      <ul className="list-disc">
+                        <li>
+                          <b>Warning</b>
+                        </li>
+                      </ul>
+                    </span>
                   </p>
                   <p className="text-2xl text-white pt-5 leading-snug">
                     Danger
@@ -211,7 +223,7 @@ export const PhoneUnderlay = () => {
               </motion.div>
 
               <motion.div
-                className="fixed z-30 top-[20%] left-[80%] right-[50%] pointer-events-none"
+                className="fixed z-30 top-[30%] left-[80%] right-[50%] pointer-events-none"
                 style={{
                   y: slideFourTextBox,
                   scale: imageScale,
@@ -220,7 +232,13 @@ export const PhoneUnderlay = () => {
               >
                 <div className="w-full max-w-2xl">
                   <p className="text-2xl text-white pt-5 leading-snug">
-                    <b>Healthy</b>
+                    <span className="inline-block">
+                      <ul className="list-disc">
+                        <li>
+                          <b>Healthy</b>
+                        </li>
+                      </ul>
+                    </span>
                   </p>
                   <p className="text-2xl text-white pt-5 leading-snug">
                     Warning

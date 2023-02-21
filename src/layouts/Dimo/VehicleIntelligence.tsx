@@ -88,7 +88,7 @@ export const VehicleIntelligence = () => {
       0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65,
       0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1,
     ],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
     {
       clamp: true,
     }
@@ -147,7 +147,7 @@ export const VehicleIntelligence = () => {
             {timestamp && (
               <Portal key={timestamp}>
                 <motion.div
-                  className="fixed z-30 top-[20%] left-[5%] pointer-events-none"
+                  className="fixed z-30 top-[25%] left-[5%] pointer-events-none"
                   style={{
                     y: slideFourTextBox,
                     scale: scrollScale,
@@ -156,7 +156,13 @@ export const VehicleIntelligence = () => {
                 >
                   <div className="w-full max-w-2xl">
                     <p className="text-2xl text-white pt-5 leading-snug">
-                      <b>Range</b>
+                      <span className="inline-block">
+                        <ul className="list-disc">
+                          <li>
+                            <b>Range</b>
+                          </li>
+                        </ul>
+                      </span>
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
                       Distance
@@ -174,7 +180,7 @@ export const VehicleIntelligence = () => {
                 </motion.div>
 
                 <motion.div
-                  className="fixed z-30 top-[20%] left-[5%] pointer-events-none"
+                  className="fixed z-30 top-[25%] left-[5%] pointer-events-none"
                   style={{
                     y: slideFourTextBox,
                     scale: scrollScale,
@@ -186,7 +192,13 @@ export const VehicleIntelligence = () => {
                       Range
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
-                      <b>Distance</b>
+                      <span className="inline-block">
+                        <ul className="list-disc">
+                          <li>
+                            <b>Distance</b>
+                          </li>
+                        </ul>
+                      </span>
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
                       Valuation
@@ -201,7 +213,7 @@ export const VehicleIntelligence = () => {
                 </motion.div>
 
                 <motion.div
-                  className="fixed z-30 top-[20%] left-[5%] pointer-events-none"
+                  className="fixed z-30 top-[25%] left-[5%] pointer-events-none"
                   style={{
                     y: slideFourTextBox,
                     scale: scrollScale,
@@ -216,7 +228,13 @@ export const VehicleIntelligence = () => {
                       Distance
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
-                      <b>Valuation</b>
+                      <span className="inline-block">
+                        <ul className="list-disc">
+                          <li>
+                            <b>Valuation</b>
+                          </li>
+                        </ul>
+                      </span>
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
                       Habits
@@ -227,7 +245,7 @@ export const VehicleIntelligence = () => {
                   </div>
                 </motion.div>
                 <motion.div
-                  className="fixed z-30 top-[20%] left-[5%] pointer-events-none"
+                  className="fixed z-30 top-[25%] left-[5%] pointer-events-none"
                   style={{
                     y: slideFourTextBox,
                     scale: scrollScale,
@@ -245,7 +263,13 @@ export const VehicleIntelligence = () => {
                       Valuation
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
-                      <b>Habits</b>
+                      <span className="inline-block">
+                        <ul className="list-disc">
+                          <li>
+                            <b>Habits</b>
+                          </li>
+                        </ul>
+                      </span>
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
                       Tires
@@ -253,7 +277,7 @@ export const VehicleIntelligence = () => {
                   </div>
                 </motion.div>
                 <motion.div
-                  className="fixed z-30 top-[20%] left-[5%] pointer-events-none"
+                  className="fixed z-30 top-[25%] left-[5%] pointer-events-none"
                   style={{
                     y: slideFourTextBox,
                     scale: scrollScale,
@@ -274,7 +298,13 @@ export const VehicleIntelligence = () => {
                       Habits
                     </p>
                     <p className="text-2xl text-white pt-5 leading-snug">
-                      <b>Tires</b>
+                      <span className="inline-block">
+                        <ul className="list-disc">
+                          <li>
+                            <b>Tires</b>
+                          </li>
+                        </ul>
+                      </span>
                     </p>
                   </div>
                 </motion.div>
@@ -285,7 +315,7 @@ export const VehicleIntelligence = () => {
             {timestamp && (
               <Portal key={timestamp}>
                 <motion.div
-                  className="fixed z-30 top-[20%] left-[50%]  pointer-events-none"
+                  className="fixed z-30 top-[25%] left-[50%]  pointer-events-none"
                   style={{
                     y: slideFourTextBox,
                     scale: scrollScale,
@@ -312,7 +342,7 @@ export const VehicleIntelligence = () => {
             {timestamp && (
               <Portal key={timestamp}>
                 <motion.div
-                  className="fixed z-30 top-20 left-0 right-[40%] pointer-events-none"
+                  className="fixed z-30 top-[20%] left-0 right-[40%] pointer-events-none"
                   style={{
                     y: slideOneOpacity,
                     scale: scrollScale,
@@ -325,7 +355,7 @@ export const VehicleIntelligence = () => {
                 </motion.div>
 
                 <motion.div
-                  className="fixed z-30 top-20 left-0 right-[40%]  pointer-events-none"
+                  className="fixed z-30 top-[20%] left-0 right-[40%]  pointer-events-none"
                   style={{
                     y: slideTwoOpacity,
                     scale: scrollScale,
@@ -338,7 +368,7 @@ export const VehicleIntelligence = () => {
                 </motion.div>
 
                 <motion.div
-                  className="fixed z-30 top-20 left-0 right-[40%]  pointer-events-none"
+                  className="fixed z-30 top-[20%] left-0 right-[40%]  pointer-events-none"
                   style={{
                     y: slideThreeOpacity,
                     scale: scrollScale,
@@ -351,7 +381,7 @@ export const VehicleIntelligence = () => {
                 </motion.div>
 
                 <motion.div
-                  className="fixed z-30 top-20 left-0 right-[40%]  pointer-events-none"
+                  className="fixed z-30 top-[20%] left-0 right-[40%]  pointer-events-none"
                   style={{
                     y: slideFourOpacity,
                     scale: scrollScale,
@@ -364,7 +394,7 @@ export const VehicleIntelligence = () => {
                 </motion.div>
 
                 <motion.div
-                  className="fixed z-30 top-20 left-0 right-[40%]  pointer-events-none"
+                  className="fixed z-30 top-[20%] left-0 right-[40%] bottom-[20%]  pointer-events-none"
                   style={{
                     y: slideFiveY,
                     scale: scrollScale,

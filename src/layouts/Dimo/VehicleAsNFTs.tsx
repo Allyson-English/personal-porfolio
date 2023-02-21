@@ -150,7 +150,13 @@ export const VehicleAsNFTs = () => {
                     Cutomize
                   </p>
                   <p className="text-2xl text-white pt-5 leading-snug">
-                    <b>Minted</b>
+                    <span className="inline-block">
+                      <ul className="list-disc">
+                        <li>
+                          <b>Minted</b>
+                        </li>
+                      </ul>
+                    </span>
                   </p>
                 </div>
               </motion.div>
@@ -165,7 +171,13 @@ export const VehicleAsNFTs = () => {
               >
                 <div className="w-full max-w-2xl">
                   <p className="text-2xl text-white pt-5 leading-snug">
-                    <b>Customize</b>
+                    <span className="inline-block">
+                      <ul className="list-disc">
+                        <li>
+                          <b>Customized</b>
+                        </li>
+                      </ul>
+                    </span>
                   </p>
                   <p className="text-2xl text-white pt-5 leading-snug">
                     Minted
