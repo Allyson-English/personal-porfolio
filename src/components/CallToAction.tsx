@@ -1,33 +1,21 @@
+import { useTracker } from "@14islands/r3f-scroll-rig";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import { OnScrollEvent } from "locomotive-scroll";
-import { useEffect } from "react";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
+import { MutableRefObject, useEffect, useRef } from "react";
+import Marquee from "react-fast-marquee";
+import { useMeasure, useWindowSize } from "react-use";
+import { useTrackerMotionValue } from "../utils/motion";
 
 export const CallToAction = () => {
-  const { scroll } = useLocomotiveScroll();
+  const el = useRef<HTMLDivElement>(null);
+  const tracker = useTracker(el as MutableRefObject<HTMLElement>, {
+    rootMargin: "50%",
+  });
+  const progress = useTrackerMotionValue(tracker);
 
-  const scrollValue = useMotionValue(0);
-  const contentY = useTransform(scrollValue, [0.2, 0.4], ["-50vh", "0vh"]);
-
-  useEffect(() => {
-    if (!scroll) return;
-
-    scroll.on("scroll", (args: OnScrollEvent) => {
-      if (typeof args.currentElements["call-to-action"] === "object") {
-        let progress = args.currentElements["call-to-action"].progress;
-        scrollValue.set(progress);
-      }
-    });
-  }, [scroll?.name]);
+  const contentY = useTransform(progress, [0.1, 0.4], ["-20vh", "0vh"]);
 
   return (
-    <div
-      id="cta-section"
-      className="w-full bg-gray-100 overflow-hidden"
-      data-scroll-section
-      data-scroll
-      data-scroll-id="call-to-action"
-    >
+    <div ref={el} className="w-full bg-gray-100 overflow-hidden">
       <motion.div
         className="container mx-auto py-16 -z-10 overflow-clip"
         style={{ y: contentY }}

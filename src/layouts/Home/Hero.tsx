@@ -1,100 +1,55 @@
+import { useTracker } from "@14islands/r3f-scroll-rig";
 import { useMotionValue, useTransform, motion } from "framer-motion";
 import { OnScrollEvent } from "locomotive-scroll";
-import { useEffect } from "react";
+import { MutableRefObject, useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
+import { useTrackerMotionValue } from "../../utils/motion";
+
+import circlePng from "../../images/hero-circle.png";
 
 export const Hero = () => {
-  const { scroll } = useLocomotiveScroll();
-  const benValue = useMotionValue(0);
-  const benOpacity = useTransform(benValue, [0.5, 1], [1, 0], { clamp: true });
-
-  useEffect(() => {
-    if (!scroll) return;
-
-    scroll.on("scroll", (args: OnScrollEvent) => {
-      if (typeof args.currentElements["hero"] === "object") {
-        let progress = args.currentElements["hero"].progress;
-        // console.log(args.currentElements["hero"]);
-        benValue.set(progress);
-        // ouput log example: 0.34
-        // gsap example : myGsapAnimation.progress(progress);
-      }
-    });
-  }, [scroll?.name]);
+  const el = useRef<HTMLDivElement>(null);
+  const tracker = useTracker(el as MutableRefObject<HTMLElement>, {
+    rootMargin: "50%",
+  });
+  const progress = useTrackerMotionValue(tracker);
+  const benOpacity = useTransform(progress, [0.5, 1], [1, 0], { clamp: true });
+  const circleY = useTransform(progress, [0.5, 1], ["0vh", "-30vh"], {
+    clamp: true,
+  });
 
   return (
     <div
-      className="h-[calc(100vh-4rem)] w-full bg-black flex flex-col justify-end"
-      data-scroll-section
+      ref={el}
+      className="h-screen md:h-[calc(100vh-4rem)] w-full bg-black flex flex-col justify-end relative"
     >
-      <div className="flex items-end container mx-auto mb-32">
-        <div className="w-[50%]">
-          {/* <div className="flex items-center mb-8">
-            <div className="h-12 w-12 bg-white mr-4"></div>
-            <div>
-              <p className="text-white">
-                Portfolio 2020 - 2022
-                <br />
-                Last updated November 31, 2022
-              </p>
-            </div>
-          </div> */}
+      <motion.img
+        src={circlePng}
+        alt=""
+        className="absolute top-40 md:top-0 left-0 h-auto w-[60%] md:w-[32%]"
+        style={{
+          y: circleY,
+        }}
+      />
+      <div className="flex flex-col md:flex-row md:items-end container mx-auto mb-32 px-6 md:px-0">
+        <div className="md:w-[50%] mb-8 md:mb-0">
           <motion.div
-            className="space-y-2 text-right max-w-[460px] min-w-[460px]"
-            data-scroll
-            data-scroll-id="hero"
+            className="space-y-2 md:text-right w-[274px] md:w-[460px]"
             style={{ opacity: benOpacity }}
           >
-            <p className="text-white text-6xl flex justify-between">
+            <p className="text-white text-4xl md:text-6xl flex justify-between">
               Ben Kochanowski
             </p>
-
-            {/* <p className="text-white text-6xl flex justify-between">
-              <span>B</span>
-              <span>e</span>
-              <span>n</span>
-              <span> </span>
-              <span>K</span>
-              <span>o</span>
-              <span>c</span>
-              <span>h</span>
-              <span>a</span>
-              <span>n</span>
-              <span>o</span>
-              <span>w</span>
-              <span>s</span>
-              <span>k</span>
-              <span>i</span>
-            </p> */}
             <div className="flex items-center">
               <div className="h-[1px] flex-1 bg-gray-500 mr-4 relative">
                 <div className="absolute left-0 -top-1 bg-gray-200 h-2 w-2 rounded-full"></div>
               </div>
-              <p className="text-white text-6xl">is a digital</p>
+              <p className="text-white text-4xl md:text-6xl">is a digital</p>
             </div>
-            <p className="text-white text-6xl flex justify-between">
+            <p className="text-white text-4xl md:text-6xl flex justify-between">
               Product Designer.
             </p>
-            {/* <p className="text-white text-6xl flex justify-between">
-              <span>P</span>
-              <span>r</span>
-              <span>o</span>
-              <span>d</span>
-              <span>u</span>
-              <span>c</span>
-              <span>t</span>
-              <span> </span>
-              <span>D</span>
-              <span>e</span>
-              <span>s</span>
-              <span>i</span>
-              <span>g</span>
-              <span>n</span>
-              <span>e</span>
-              <span>r</span>
-              <span>.</span>
-            </p> */}
           </motion.div>
         </div>
 
@@ -113,7 +68,6 @@ export const Hero = () => {
 
       <div className="flex justify-center items-end container mx-auto pb-4">
         <div className="flex flex-col items-center justify-center w-48">
-          {/* <span className="text-white uppercase">Scroll to explore</span> */}
           <Marquee className="text-white uppercase" gradient={false}>
             Scroll to explore – Scroll to explore –
           </Marquee>

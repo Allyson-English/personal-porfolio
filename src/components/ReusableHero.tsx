@@ -1,6 +1,5 @@
 import { useMeasure } from "react-use";
 import { ListItem } from "./ListItem";
-import { Textfit } from "react-textfit";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
 

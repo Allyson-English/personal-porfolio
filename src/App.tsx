@@ -1,3 +1,4 @@
+import { GlobalCanvas } from "@14islands/r3f-scroll-rig";
 import LocomotiveScroll from "locomotive-scroll";
 import { useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
@@ -9,6 +10,7 @@ import {
 } from "react-router-dom";
 import { RecoilRoot, useRecoilValue } from "recoil";
 import { locationState } from "./atoms/scroll";
+import { About } from "./layouts/About";
 import { Daniel } from "./layouts/Daniel";
 import { Dimo } from "./layouts/Dimo";
 import { Home } from "./layouts/Home";
@@ -16,10 +18,14 @@ import { NormalNYC } from "./layouts/Normal-NYC";
 import { Pods } from "./layouts/Pods";
 import { Semo } from "./layouts/Semo";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
   {
     path: "/projects/dimo",
@@ -50,6 +56,7 @@ const router = createHashRouter([
 function App() {
   return (
     <RecoilRoot>
+      <GlobalCanvas />
       <RouterProvider router={router} />
     </RecoilRoot>
   );
